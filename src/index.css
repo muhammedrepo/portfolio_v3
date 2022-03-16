@@ -1,13 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+/*	Copyright (c) 2022 Coolzyte
+/*	Author: Coolzyte
+/*	This file is made for CURRENT TEMPLATE
+
+01) PORTFOLIO BASE
+02) PORTFOLIO TOPBAR
+03) PORTFOLIO MOBILE MENU
+04) PORTFOLIO HERO
+05) PORTFOLIO ABOUT
+06) PORTFOLIO SERVICES
+07) PORTFOLIO PORTFOLIO
+08) PORTFOLIO TESTIMONIALS
+09) PORTFOLIO NEWS
+10) PORTFOLIO CONTACT
+11) PORTFOLIO COPYRIGHT
+12) PORTFOLIO CURSOR
+13) PORTFOLIO SLIDER
+14) PORTFOLIO MEDIA QUERIES (FOR SMALL DEVICES)
+
+/*---------------------------------------------------*/
+/*	01) PORTFOLIO BASE
+/*---------------------------------------------------*/
+
+html {
+  overflow-x: hidden;
+  padding: 0px;
+  margin: 0px;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Mulish";
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+  word-wrap: break-word;
+  font-weight: 400;
+  background-color: #fff;
+  color: #767676;
+}
+svg {
+  fill: currentcolor;
+  width: 15px;
+  height: 15px;
+}
+img.svg {
+  width: 15px;
+  height: 15px;
+}
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #6f6f6f;
+}
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #6f6f6f;
+  opacity: 1;
+}
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #6f6f6f;
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #6f6f6f;
+}
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #6f6f6f;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+::placeholder {
+  /* Most modern browsers support this now. */
+  color: #6f6f6f;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  line-height: 1.4;
+  font-family: "Poppins";
+  color: #000;
 }
