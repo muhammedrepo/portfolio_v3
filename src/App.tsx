@@ -7,17 +7,19 @@ import {
   Contact,
 } from "./container";
 
+import { Navbar } from "./components";
 import { AppWrap } from "./AppStyles";
 
 function App() {
   return (
     <AppWrap>
+      <Navbar />
       <Hero />
       <About />
       <Services />
-      <Portfolio />
+      {/* <Portfolio />
       <Testimonials />
-      <Contact />
+      <Contact /> */}
     </AppWrap>
   );
 }
