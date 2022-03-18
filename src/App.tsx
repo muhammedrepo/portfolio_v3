@@ -17,8 +17,8 @@ function App() {
       <Hero />
       <About />
       <Services />
-      {/* <Portfolio />
-      <Testimonials />
+      <Portfolio />
+      {/*<Testimonials />
       <Contact /> */}
     </AppWrap>
   );
