@@ -1,23 +1,20 @@
 import { TestimonialsWrapper } from "./TestimonialsStyles";
+import images from "../../constants/images";
+import { SectionTitle } from "../../components";
 
 const Testimonials = () => {
   return (
     <TestimonialsWrapper>
       <div className="coolzyte_tm_testimonials">
         <div className="container">
-          <div className="coolzyte_tm_main_title">
-            <div className="title">
-              <h3>
-                What Clients Say<span className="bg">Testimonial</span>
-              </h3>
-            </div>
-          </div>
+          <SectionTitle name="What Clients Say" title="Testimonials" />
+
           <div className="testi_inner">
             <div className="left">
               <div className="quote_list">
                 <ul>
                   <li className="active">
-                    <img className="svg" src="img/svg/quote-1.svg" alt="" />
+                    <img className="svg" src={images.quote1} alt="" />
                     <p className="text">
                       Good overall template. I am getting back into coding and
                       had a simple question for the author. They responded
@@ -26,10 +23,9 @@ const Testimonials = () => {
                     </p>
                     <div className="details">
                       <div className="image">
-                        <div
-                          className="main"
-                          data-img-url="img/about/1.jpg"
-                        ></div>
+                        <div className="main" data-img-url="">
+                          <img src={images.about1} alt="" />
+                        </div>
                       </div>
                       <div className="short">
                         <h3 className="author">
@@ -42,7 +38,7 @@ const Testimonials = () => {
                     </div>
                   </li>
                   <li>
-                    <img className="svg" src="img/svg/quote-1.svg" alt="" />
+                    <img className="svg" src={images.quote1} alt="" />
                     <p className="text">
                       I can't believe I got support and my problem resolved in
                       just minutes from posting my question. Simply amazing team
@@ -51,10 +47,9 @@ const Testimonials = () => {
                     </p>
                     <div className="details">
                       <div className="image">
-                        <div
-                          className="main"
-                          data-img-url="img/about/2.jpg"
-                        ></div>
+                        <div className="main" data-img-url="">
+                          <img src={images.about1} alt="" />
+                        </div>
                       </div>
                       <div className="short">
                         <h3 className="author">
@@ -67,7 +62,7 @@ const Testimonials = () => {
                     </div>
                   </li>
                   <li>
-                    <img className="svg" src="img/svg/quote-1.svg" alt="" />
+                    <img className="svg" src={images.quote1} alt="" />
                     <p className="text">
                       Awesome template, well written code and looks great on any
                       platform. The customer support is very helpful and as huge
@@ -76,10 +71,9 @@ const Testimonials = () => {
                     </p>
                     <div className="details">
                       <div className="image">
-                        <div
-                          className="main"
-                          data-img-url="img/about/3.jpg"
-                        ></div>
+                        <div className="main" data-img-url="">
+                          <img src={images.about1} alt="" />
+                        </div>
                       </div>
                       <div className="short">
                         <h3 className="author">
@@ -99,29 +93,26 @@ const Testimonials = () => {
                 <ul className="masonry">
                   <li className="active masonry_item">
                     <div className="image">
-                      <img src="img/thumbs/3-4.jpg" alt="" />
-                      <div
-                        className="main"
-                        data-img-url="img/about/1.jpg"
-                      ></div>
+                      <img src={images.thumb3} alt="" />
+                      <div className="main" data-img-url="">
+                        <img src={images.about1} alt="" />
+                      </div>
                     </div>
                   </li>
                   <li className="masonry_item">
                     <div className="image">
-                      <img src="img/thumbs/4-3.jpg" alt="" />
-                      <div
-                        className="main"
-                        data-img-url="img/about/2.jpg"
-                      ></div>
+                      <img src={images.thumb2} alt="" />
+                      <div className="main" data-img-url="">
+                        <img src={images.about1} alt="" />
+                      </div>
                     </div>
                   </li>
                   <li className="masonry_item">
                     <div className="image">
-                      <img src="img/thumbs/1-1.jpg" alt="" />
-                      <div
-                        className="main"
-                        data-img-url="img/about/3.jpg"
-                      ></div>
+                      <img src={images.thumb1} alt="" />
+                      <div className="main" data-img-url="">
+                        <img src={images.about1} alt="" />
+                      </div>
                     </div>
                   </li>
                 </ul>

@@ -1,30 +1,28 @@
 import styled from "styled-components";
 
 export const ServicesWrapper = styled.div`
-  margin-bottom: 140px;
-
-  .service_inner {
+  .coolzyte_tm_service {
+    margin-bottom: 140px;
+  }
+  .coolzyte_tm_service,
+  .coolzyte_tm_service .service_inner {
     width: 100%;
     height: auto;
     clear: both;
     float: left;
   }
-  .item {
-    margin: 0px;
 
-    cursor: e-resize;
-  }
-  .item-link {
+  .coolzyte_tm_service .item {
     margin: 0px;
   }
-  .item-link .list_inner {
+  .list_inner {
     width: 100%;
     height: auto;
     clear: both;
     float: left;
     position: relative;
   }
-  .item-link .svg {
+  .coolzyte_tm_service .item .svg {
     position: absolute;
     left: 0px;
     top: 5px;
@@ -38,16 +36,17 @@ export const ServicesWrapper = styled.div`
     -o-transition: all 0.4s ease;
     transition: all 0.4s ease;
   }
-  .item-link .details {
+  .coolzyte_tm_service .item .details {
     padding-left: 75px;
+    text-align: left;
   }
-  .item-link .details h3 {
+  .coolzyte_tm_service .item .details h3 {
     margin: 0px;
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 16px;
   }
-  .item-link .details p {
+  .coolzyte_tm_service .item .details p {
     font-style: italic;
   }
 
@@ -81,5 +80,21 @@ export const ServicesWrapper = styled.div`
     width: 10%;
     height: 100%;
     object-fit: cover;
+  }
+
+  @media (max-width: 640px) {
+    .list_inner {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .coolzyte_tm_service .item .details {
+      margin-top: 20px;
+      padding-left: 0px;
+    }
+    .coolzyte_tm_service .item .svg {
+      position: relative;
+      top: 0;
+    }
   }
 `;

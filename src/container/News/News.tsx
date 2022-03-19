@@ -1,5 +1,408 @@
+import { SectionTitle } from "../../components";
+import { Wrapper } from "./NewsStyles";
+import images from "../../constants/images";
+
 const News = () => {
-  return <div>News</div>;
+  return (
+    <Wrapper>
+      <div className="coolzyte_tm_news" id="news">
+        <div className="container">
+          <SectionTitle name="Latest News" title="News" />
+          <div className="news_inner">
+            <ul>
+              <li className="wow fadeInDown" data-wow-duration="0.8s">
+                <div className="list_inner">
+                  <div className="image">
+                    <img src="img/thumbs/4-3.jpg" alt="" />
+                    <div className="main">{images.news1}</div>
+                    <a className="full_link" href="#"></a>
+                  </div>
+                  <div className="details">
+                    <div className="extra">
+                      <p className="date">
+                        By <a href="#">Alex Watson</a> <span>10 May 2021</span>
+                      </p>
+                    </div>
+                    <h3 className="title">
+                      <a href="#">
+                        Developers watch out for these burnout symptoms
+                      </a>
+                    </h3>
+                  </div>
+                  <div className="main_content">
+                    <div className="descriptions">
+                      <p className="bigger">
+                        Just because we can't get out and about like we normally
+                        would, doesn’t mean we have to stop taking pictures.
+                        There’s still plenty you can do, provided you're
+                        prepared to use some imagination. Here are a few ideas
+                        to keep you shooting until normal life resumes.
+                      </p>
+                      <p>
+                        Most photographers love to shoot the unusual, and you
+                        don’t get much more unusual than These Unprecedented
+                        Times. Right now everything counts as out of the
+                        ordinary. There are a number of remarkable things about
+                        these lockdown days that are worth photographing now so
+                        we can remember them when it is all over.
+                      </p>
+                      <p>
+                        Streets empty that are usually busy are remarkable and
+                        can evoke the sense of historical pictures from before
+                        the invention of the motorcar. Other things that are
+                        different at the moment will be queues to get into
+                        stores and the lines marked out on the floor to show how
+                        far apart we should be.
+                      </p>
+                      <div className="quotebox">
+                        <div className="icon">
+                          <img className="svg" src="img/svg/quote.svg" alt="" />
+                        </div>
+                        <p>
+                          Most photographers find it hard to see interesting
+                          pictures in places in which they are most familiar. A
+                          trip somewhere new seems always exactly what our
+                          photography needed, as shooting away from home
+                          consistently inspires us to new artistic heights.
+                        </p>
+                      </div>
+                      <p>
+                        Pretend everything is new and that you haven’t seen it
+                        before, and then you will be free to notice the leading
+                        lines, the places where one edge meets another in
+                        delightful geometric harmony, and how the ordinary
+                        things in the kitchen are transformed when the light is
+                        on or off.
+                      </p>
+                      <p>
+                        The trick here is to look slowly, and then look again.
+                        Take the time to look in detail and to look at the same
+                        thing from different angles, with different light, long
+                        lenses and wide lenses. Then move to the left a bit. You
+                        may never feel the need to leave the house again.
+                      </p>
+                    </div>
+                    <div className="news_share">
+                      <span>Share:</span>
+                      <ul>
+                        <li>
+                          <a href="#">
+                            <img
+                              className="svg"
+                              src="img/svg/social/facebook.svg"
+                              alt=""
+                            />
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img
+                              className="svg"
+                              src="img/svg/social/twitter.svg"
+                              alt=""
+                            />
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img
+                              className="svg"
+                              src="img/svg/social/instagram.svg"
+                              alt=""
+                            />
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img
+                              className="svg"
+                              src="img/svg/social/dribbble.svg"
+                              alt=""
+                            />
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img
+                              className="svg"
+                              src="img/svg/social/tik-tok.svg"
+                              alt=""
+                            />
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li
+                className="wow fadeInDown"
+                data-wow-duration="0.8s"
+                data-wow-delay="0.2s"
+              >
+                <div className="list_inner">
+                  <div className="image">
+                    <img src="img/thumbs/4-3.jpg" alt="" />
+                    <div className="main" data-img-url="">
+                      {images.news2}
+                    </div>
+                    <a className="full_link" href="#"></a>
+                  </div>
+                  <div className="details">
+                    <div className="extra">
+                      <p className="date">
+                        By <a href="#">Bona Green</a> <span>05 April 2021</span>
+                      </p>
+                    </div>
+                    <h3 className="title">
+                      <a href="#">
+                        How to be appreciated for your hard work as a developer
+                      </a>
+                    </h3>
+                  </div>
+                  <div className="main_content">
+                    <div className="descriptions">
+                      <p className="bigger">
+                        Just because we can't get out and about like we normally
+                        would, doesn’t mean we have to stop taking pictures.
+                        There’s still plenty you can do, provided you're
+                        prepared to use some imagination. Here are a few ideas
+                        to keep you shooting until normal life resumes.
+                      </p>
+                      <p>
+                        Most photographers love to shoot the unusual, and you
+                        don’t get much more unusual than These Unprecedented
+                        Times. Right now everything counts as out of the
+                        ordinary. There are a number of remarkable things about
+                        these lockdown days that are worth photographing now so
+                        we can remember them when it is all over.
+                      </p>
+                      <p>
+                        Streets empty that are usually busy are remarkable and
+                        can evoke the sense of historical pictures from before
+                        the invention of the motorcar. Other things that are
+                        different at the moment will be queues to get into
+                        stores and the lines marked out on the floor to show how
+                        far apart we should be.
+                      </p>
+                      <div className="quotebox">
+                        <div className="icon">
+                          <img className="svg" src="img/svg/quote.svg" alt="" />
+                        </div>
+                        <p>
+                          Most photographers find it hard to see interesting
+                          pictures in places in which they are most familiar. A
+                          trip somewhere new seems always exactly what our
+                          photography needed, as shooting away from home
+                          consistently inspires us to new artistic heights.
+                        </p>
+                      </div>
+                      <p>
+                        Pretend everything is new and that you haven’t seen it
+                        before, and then you will be free to notice the leading
+                        lines, the places where one edge meets another in
+                        delightful geometric harmony, and how the ordinary
+                        things in the kitchen are transformed when the light is
+                        on or off.
+                      </p>
+                      <p>
+                        The trick here is to look slowly, and then look again.
+                        Take the time to look in detail and to look at the same
+                        thing from different angles, with different light, long
+                        lenses and wide lenses. Then move to the left a bit. You
+                        may never feel the need to leave the house again.
+                      </p>
+                    </div>
+                    <div className="news_share">
+                      <span>Share:</span>
+                      <ul>
+                        <li>
+                          <a href="#">
+                            <img
+                              className="svg"
+                              src="img/svg/social/facebook.svg"
+                              alt=""
+                            />
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img
+                              className="svg"
+                              src="img/svg/social/twitter.svg"
+                              alt=""
+                            />
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img
+                              className="svg"
+                              src="img/svg/social/instagram.svg"
+                              alt=""
+                            />
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img
+                              className="svg"
+                              src="img/svg/social/dribbble.svg"
+                              alt=""
+                            />
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img
+                              className="svg"
+                              src="img/svg/social/tik-tok.svg"
+                              alt=""
+                            />
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li
+                className="wow fadeInDown"
+                data-wow-duration="0.8s"
+                data-wow-delay="0.4s"
+              >
+                <div className="list_inner">
+                  <div className="image">
+                    <img src="img/thumbs/4-3.jpg" alt="" />
+                    <div className="main" data-img-url="">
+                      {images.news3}
+                    </div>
+                    <a className="full_link" href="#"></a>
+                  </div>
+                  <div className="details">
+                    <div className="extra">
+                      <p className="date">
+                        By <a href="#">Ave Smith</a> <span>22 March 2021</span>
+                      </p>
+                    </div>
+                    <h3 className="title">
+                      <a href="#">
+                        How designers and developers can collaborate better
+                      </a>
+                    </h3>
+                  </div>
+                  <div className="main_content">
+                    <div className="descriptions">
+                      <p className="bigger">
+                        Just because we can't get out and about like we normally
+                        would, doesn’t mean we have to stop taking pictures.
+                        There’s still plenty you can do, provided you're
+                        prepared to use some imagination. Here are a few ideas
+                        to keep you shooting until normal life resumes.
+                      </p>
+                      <p>
+                        Most photographers love to shoot the unusual, and you
+                        don’t get much more unusual than These Unprecedented
+                        Times. Right now everything counts as out of the
+                        ordinary. There are a number of remarkable things about
+                        these lockdown days that are worth photographing now so
+                        we can remember them when it is all over.
+                      </p>
+                      <p>
+                        Streets empty that are usually busy are remarkable and
+                        can evoke the sense of historical pictures from before
+                        the invention of the motorcar. Other things that are
+                        different at the moment will be queues to get into
+                        stores and the lines marked out on the floor to show how
+                        far apart we should be.
+                      </p>
+                      <div className="quotebox">
+                        <div className="icon">
+                          <img className="svg" src="img/svg/quote.svg" alt="" />
+                        </div>
+                        <p>
+                          Most photographers find it hard to see interesting
+                          pictures in places in which they are most familiar. A
+                          trip somewhere new seems always exactly what our
+                          photography needed, as shooting away from home
+                          consistently inspires us to new artistic heights.
+                        </p>
+                      </div>
+                      <p>
+                        Pretend everything is new and that you haven’t seen it
+                        before, and then you will be free to notice the leading
+                        lines, the places where one edge meets another in
+                        delightful geometric harmony, and how the ordinary
+                        things in the kitchen are transformed when the light is
+                        on or off.
+                      </p>
+                      <p>
+                        The trick here is to look slowly, and then look again.
+                        Take the time to look in detail and to look at the same
+                        thing from different angles, with different light, long
+                        lenses and wide lenses. Then move to the left a bit. You
+                        may never feel the need to leave the house again.
+                      </p>
+                    </div>
+                    <div className="news_share">
+                      <span>Share:</span>
+                      <ul>
+                        <li>
+                          <a href="#">
+                            <img
+                              className="svg"
+                              src="img/svg/social/facebook.svg"
+                              alt=""
+                            />
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img
+                              className="svg"
+                              src="img/svg/social/twitter.svg"
+                              alt=""
+                            />
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img
+                              className="svg"
+                              src="img/svg/social/instagram.svg"
+                              alt=""
+                            />
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img
+                              className="svg"
+                              src="img/svg/social/dribbble.svg"
+                              alt=""
+                            />
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img
+                              className="svg"
+                              src="img/svg/social/tik-tok.svg"
+                              alt=""
+                            />
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </Wrapper>
+  );
 };
 
 export default News;

@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 
 import { PortfolioWrapper } from "./PortfolioStyles";
 import images from "../../constants/images";
+import { SectionTitle } from "../../components";
 
 const Portfolio = () => {
   const [toggle, setToggle] = useState(false);
@@ -16,11 +17,7 @@ const Portfolio = () => {
       <div className="coolzyte_tm_portoflio" id="portfolio">
         <div className="container">
           <div className="coolzyte_tm_main_title">
-            <div className="title">
-              <h3>
-                Featured Works<span className="bg">Portfolio</span>
-              </h3>
-            </div>
+            <SectionTitle name="Featured Works" title="Portfolio" />
             <div className="portfolio_filter">
               {toggle &&
                 ["All", "Html/Css", "UI/UX", "Web App", "React JS"].map(
@@ -73,10 +70,7 @@ const Portfolio = () => {
                 <div className="list_inner">
                   <div className="image">
                     <img src="img/thumbs/1-1.jpg" alt="" />
-                    <div
-                      className="main"
-                      data-img-url={images.portfolio2}
-                    ></div>
+                    <img src={images.portfolio2} className="main" alt="" />
                     <a
                       className="full_link popup-youtube"
                       href="https://www.youtube.com/watch?v=Amq-qlqbjYA"
@@ -102,7 +96,7 @@ const Portfolio = () => {
                     ></div>
                     <a
                       className="full_link soundcloude_link mfp-iframe audio"
-                      href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/252739311&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=truehttps://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/252739311&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+                      href="https://w.soundcloud.com/player/?url=https%3A"
                     ></a>
                   </div>
                   <div className="title">

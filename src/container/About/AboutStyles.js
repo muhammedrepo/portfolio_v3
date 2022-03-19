@@ -1,12 +1,14 @@
 import styled from "styled-components";
 
 export const AboutWrapper = styled.div`
-  width: 100%;
-  height: auto;
-  clear: both;
-  float: left;
-  margin-bottom: 193px;
-  padding-top: 230px;
+  .coolzyte_tm_about {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    margin-bottom: 193px;
+    padding-top: 230px;
+  }
 
   .about_inner {
     width: 100%;
@@ -70,13 +72,13 @@ export const AboutWrapper = styled.div`
     margin-bottom: 13px;
     font-style: italic;
   }
-  .waxon_tm_button {
+  .coolzyte_tm_button {
     width: 100%;
     height: auto;
     clear: both;
     float: left;
   }
-  .waxon_tm_button a {
+  .coolzyte_tm_button a {
     text-decoration: none;
     color: #fff;
     background-color: #000;
@@ -91,20 +93,20 @@ export const AboutWrapper = styled.div`
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
-  .waxon_tm_button a:hover {
+  .coolzyte_tm_button a:hover {
     background-color: transparent;
     color: #000;
   }
-  .waxon_tm_button[data-position="left"] {
+  .coolzyte_tm_button[data-position="left"] {
     text-align: left;
   }
-  .waxon_tm_button[data-position="center"] {
+  .coolzyte_tm_button[data-position="center"] {
     text-align: center;
   }
-  .waxon_tm_button[data-position="right"] {
+  .coolzyte_tm_button[data-position="right"] {
     text-align: right;
   }
-  .waxon_tm_modalbox_about {
+  .coolzyte_tm_modalbox_about {
     position: fixed;
     top: 0px;
     left: 0px;
@@ -121,14 +123,14 @@ export const AboutWrapper = styled.div`
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
-  .waxon_tm_modalbox_about.opened {
+  .coolzyte_tm_modalbox_about.opened {
     opacity: 1;
     visibility: visible;
   }
-  .waxon_tm_modalbox_about .container {
+  .coolzyte_tm_modalbox_about .container {
     height: 100vh;
   }
-  .waxon_tm_modalbox_about .box_inner {
+  .coolzyte_tm_modalbox_about .box_inner {
     position: absolute;
     top: 70px;
     bottom: 70px;
@@ -148,27 +150,27 @@ export const AboutWrapper = styled.div`
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
-  .waxon_tm_modalbox_about.opened .box_inner {
+  .coolzyte_tm_modalbox_about.opened .box_inner {
     opacity: 1;
     visibility: visible;
     margin-top: 0px;
   }
-  .waxon_tm_modalbox_about .close {
+  .coolzyte_tm_modalbox_about .close {
     position: fixed;
     left: 100%;
     top: 0px;
     margin-left: 40px;
     z-index: 111111;
   }
-  .waxon_tm_modalbox_about .close a {
+  .coolzyte_tm_modalbox_about .close a {
     text-decoration: none;
     color: #fff;
   }
-  .waxon_tm_modalbox_about .close .svg {
+  .coolzyte_tm_modalbox_about .close .svg {
     width: 50px;
     height: 50px;
   }
-  .waxon_tm_modalbox_about .description_wrap {
+  .coolzyte_tm_modalbox_about .description_wrap {
     position: relative;
     width: 100%;
     height: 100%;
@@ -177,23 +179,23 @@ export const AboutWrapper = styled.div`
     padding: 90px 70px 75px 70px;
     overflow-y: scroll;
   }
-  .waxon_tm_modalbox_about .my_box {
+  .coolzyte_tm_modalbox_about .my_box {
     width: 100%;
     height: auto;
     clear: both;
     display: flex;
     margin-bottom: 92px;
   }
-  .waxon_tm_modalbox_about .my_box .left {
+  .coolzyte_tm_modalbox_about .my_box .left {
     width: 50%;
     padding-right: 50px;
   }
-  .waxon_tm_modalbox_about .about_title h3 {
+  .coolzyte_tm_modalbox_about .about_title h3 {
     font-weight: 700;
     color: #000;
     font-size: 20px;
   }
-  .waxon_progress {
+  .coolzyte_progress {
     width: 100%;
     height: auto;
     clear: both;
@@ -267,29 +269,29 @@ export const AboutWrapper = styled.div`
     }
   }
 
-  .waxon_tm_modalbox_about .my_box .right {
+  .coolzyte_tm_modalbox_about .my_box .right {
     width: 50%;
     padding-left: 50px;
   }
-  .waxon_tm_modalbox_about .counter {
+  .coolzyte_tm_modalbox_about .counter {
     width: 100%;
     float: left;
     clear: both;
   }
-  .waxon_tm_modalbox_about .counter ul {
+  .coolzyte_tm_modalbox_about .counter ul {
     margin: 0px 0px 42px -50px;
     list-style-type: none;
     padding-top: 45px;
     display: flex;
     flex-wrap: wrap;
   }
-  .waxon_tm_modalbox_about .counter ul li {
+  .coolzyte_tm_modalbox_about .counter ul li {
     margin: 0px 0px 50px 0px;
     width: 33.3333%;
     float: left;
     padding-left: 50px;
   }
-  .waxon_tm_modalbox_about .list_inner {
+  .coolzyte_tm_modalbox_about .list_inner {
     width: 100%;
     height: 100%;
     clear: both;
@@ -299,26 +301,26 @@ export const AboutWrapper = styled.div`
     text-align: center;
     padding: 40px 20px;
   }
-  .waxon_tm_modalbox_about .counter ul li h3 {
+  .coolzyte_tm_modalbox_about .counter ul li h3 {
     font-weight: 600;
     font-size: 20px;
     margin-bottom: 3px;
   }
-  .waxon_tm_modalbox_about .counter ul li span {
+  .coolzyte_tm_modalbox_about .counter ul li span {
     font-style: italic;
   }
-  .waxon_tm_modalbox_about .partners {
+  .coolzyte_tm_modalbox_about .partners {
     width: 100%;
     height: auto;
     clear: both;
     float: left;
   }
-  .waxon_tm_modalbox_about .partners ul {
+  .coolzyte_tm_modalbox_about .partners ul {
     margin: 0px;
     list-style-type: none;
     padding-top: 15px;
   }
-  .waxon_tm_modalbox_about .partners ul li {
+  .coolzyte_tm_modalbox_about .partners ul li {
     margin: 0px;
     opacity: 0.5;
 
@@ -328,7 +330,7 @@ export const AboutWrapper = styled.div`
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
-  .waxon_tm_modalbox_about .partners ul li:hover {
+  .coolzyte_tm_modalbox_about .partners ul li:hover {
     opacity: 1;
   }
 `;

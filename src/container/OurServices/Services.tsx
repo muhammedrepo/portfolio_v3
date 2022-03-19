@@ -1,84 +1,58 @@
 import { ServicesWrapper } from "./ServicesStyles";
-import images from "../../constants/images";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
 import { Autoplay } from "swiper";
+import { serviceData } from "../../utils/serviceData";
 
 const Services = () => {
   return (
     <ServicesWrapper>
-      <div className="container">
-        <div className="service_inner">
-          <Swiper
-            slidesPerView={3}
-            spaceBetween={10}
-            slidesPerGroup={3}
-            loop={true}
-            autoplay={{
-              delay: 5000,
-              disableOnInteraction: false,
-            }}
-            modules={[Autoplay]}
-            className="mySwiper"
-          >
-            <SwiperSlide className="item">
-              <div className="item-link">
-                <div className="list_inner">
-                  <img className="svg" src={images.code} alt="" />
-                  <div className="details">
-                    <h3>Web Development</h3>
-                    <p>
-                      Web design is a similar process of creation, with the
-                      intention intention of the pre presenting...
-                    </p>
+      <div className="coolzyte_tm_service">
+        <div className="container">
+          <div className="service_inner">
+            <Swiper
+              // slidesPerView={3}
+              // spaceBetween={10}
+              // slidesPerGroup={3}
+              breakpoints={{
+                1024: {
+                  slidesPerView: 3,
+                  spaceBetween: 5,
+                },
+                768: {
+                  slidesPerView: 2,
+                  spaceBetween: 10,
+                },
+                640: {
+                  slidesPerView: 1,
+                  spaceBetween: 0,
+                },
+              }}
+              loop={true}
+              autoplay={{
+                delay: 5000,
+                disableOnInteraction: false,
+              }}
+              modules={[Autoplay]}
+              className="mySwiper"
+            >
+              {serviceData.map((item, index) => (
+                <SwiperSlide key={index}>
+                  <div className="item">
+                    <div className="list_inner">
+                      <img className="svg" src={item.img} alt="" />
+
+                      <div className="details">
+                        <h3>{item.title}</h3>
+                        <p>{item.description}</p>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide className="item">
-              <div className="item-link">
-                <div className="list_inner">
-                  <img className="svg" src={images.creative} alt="" />
-                  <div className="details">
-                    <h3>Creative Design</h3>
-                    <p>
-                      Web design is a similar process of creation, with the
-                      intention intention of the pre presenting...
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide className="item">
-              <div className="item-link">
-                <div className="list_inner">
-                  <img className="svg" src={images.telegram} alt="" />
-                  <div className="details">
-                    <h3>Brand Identity</h3>
-                    <p>
-                      Web design is a similar process of creation, with the
-                      intention intention of the pre presenting...
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide className="item">
-              <div className="item-link">
-                <div className="list_inner">
-                  <img className="svg" src={images.photoshop} alt="" />
-                  <div className="details">
-                    <h3>Adobe Photoshop</h3>
-                    <p>
-                      Web design is a similar process of creation, with the
-                      intention intention of the pre presenting...
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-          </Swiper>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
         </div>
       </div>
     </ServicesWrapper>
