@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const AboutWrapper = styled.div`
-  .coolzyte_tm_about {
+  .about {
     width: 100%;
     height: auto;
     clear: both;
@@ -72,41 +72,8 @@ export const AboutWrapper = styled.div`
     margin-bottom: 13px;
     font-style: italic;
   }
-  .coolzyte_tm_button {
-    width: 100%;
-    height: auto;
-    clear: both;
-    float: left;
-  }
-  .coolzyte_tm_button a {
-    text-decoration: none;
-    color: #fff;
-    background-color: #000;
-    padding: 13px 50px;
-    display: inline-block;
-    border: 2px solid #000;
-    font-style: italic;
 
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-  }
-  .coolzyte_tm_button a:hover {
-    background-color: transparent;
-    color: #000;
-  }
-  .coolzyte_tm_button[data-position="left"] {
-    text-align: left;
-  }
-  .coolzyte_tm_button[data-position="center"] {
-    text-align: center;
-  }
-  .coolzyte_tm_button[data-position="right"] {
-    text-align: right;
-  }
-  .coolzyte_tm_modalbox_about {
+  .modalbox_about {
     position: fixed;
     top: 0px;
     left: 0px;
@@ -123,14 +90,11 @@ export const AboutWrapper = styled.div`
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
-  .coolzyte_tm_modalbox_about.opened {
-    opacity: 1;
-    visibility: visible;
-  }
-  .coolzyte_tm_modalbox_about .container {
+
+  .modalbox_about .container {
     height: 100vh;
   }
-  .coolzyte_tm_modalbox_about .box_inner {
+  .modalbox_about .box_inner {
     position: absolute;
     top: 70px;
     bottom: 70px;
@@ -150,27 +114,27 @@ export const AboutWrapper = styled.div`
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
-  .coolzyte_tm_modalbox_about.opened .box_inner {
+  .modalbox_about.opened .box_inner {
     opacity: 1;
     visibility: visible;
     margin-top: 0px;
   }
-  .coolzyte_tm_modalbox_about .close {
+  .modalbox_about .close {
     position: fixed;
     left: 100%;
     top: 0px;
     margin-left: 40px;
     z-index: 111111;
   }
-  .coolzyte_tm_modalbox_about .close a {
+  .modalbox_about .close a {
     text-decoration: none;
     color: #fff;
   }
-  .coolzyte_tm_modalbox_about .close .svg {
+  .modalbox_about .close .svg {
     width: 50px;
     height: 50px;
   }
-  .coolzyte_tm_modalbox_about .description_wrap {
+  .modalbox_about .description_wrap {
     position: relative;
     width: 100%;
     height: 100%;
@@ -179,18 +143,18 @@ export const AboutWrapper = styled.div`
     padding: 90px 70px 75px 70px;
     overflow-y: scroll;
   }
-  .coolzyte_tm_modalbox_about .my_box {
+  .modalbox_about .my_box {
     width: 100%;
     height: auto;
     clear: both;
     display: flex;
     margin-bottom: 92px;
   }
-  .coolzyte_tm_modalbox_about .my_box .left {
+  .modalbox_about .my_box .left {
     width: 50%;
     padding-right: 50px;
   }
-  .coolzyte_tm_modalbox_about .about_title h3 {
+  .modalbox_about .about_title h3 {
     font-weight: 700;
     color: #000;
     font-size: 20px;
@@ -244,54 +208,29 @@ export const AboutWrapper = styled.div`
     width: 100%;
   }
 
-  @-webkit-keyframes wow {
-    0% {
-      width: 0%;
-    }
-    100% {
-      width: 100%;
-    }
-  }
-  @-moz-keyframes wow {
-    0% {
-      width: 0%;
-    }
-    100% {
-      width: 100%;
-    }
-  }
-  @keyframes wow {
-    0% {
-      width: 0%;
-    }
-    100% {
-      width: 100%;
-    }
-  }
-
-  .coolzyte_tm_modalbox_about .my_box .right {
+  .modalbox_about .my_box .right {
     width: 50%;
     padding-left: 50px;
   }
-  .coolzyte_tm_modalbox_about .counter {
+  .modalbox_about .counter {
     width: 100%;
     float: left;
     clear: both;
   }
-  .coolzyte_tm_modalbox_about .counter ul {
+  .modalbox_about .counter ul {
     margin: 0px 0px 42px -50px;
     list-style-type: none;
     padding-top: 45px;
     display: flex;
     flex-wrap: wrap;
   }
-  .coolzyte_tm_modalbox_about .counter ul li {
+  .modalbox_about .counter ul li {
     margin: 0px 0px 50px 0px;
     width: 33.3333%;
     float: left;
     padding-left: 50px;
   }
-  .coolzyte_tm_modalbox_about .list_inner {
+  .modalbox_about .list_inner {
     width: 100%;
     height: 100%;
     clear: both;
@@ -301,26 +240,26 @@ export const AboutWrapper = styled.div`
     text-align: center;
     padding: 40px 20px;
   }
-  .coolzyte_tm_modalbox_about .counter ul li h3 {
+  .modalbox_about .counter ul li h3 {
     font-weight: 600;
     font-size: 20px;
     margin-bottom: 3px;
   }
-  .coolzyte_tm_modalbox_about .counter ul li span {
+  .modalbox_about .counter ul li span {
     font-style: italic;
   }
-  .coolzyte_tm_modalbox_about .partners {
+  .modalbox_about .partners {
     width: 100%;
     height: auto;
     clear: both;
     float: left;
   }
-  .coolzyte_tm_modalbox_about .partners ul {
+  .modalbox_about .partners ul {
     margin: 0px;
     list-style-type: none;
     padding-top: 15px;
   }
-  .coolzyte_tm_modalbox_about .partners ul li {
+  .modalbox_about .partners ul li {
     margin: 0px;
     opacity: 0.5;
 
@@ -330,7 +269,76 @@ export const AboutWrapper = styled.div`
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
-  .coolzyte_tm_modalbox_about .partners ul li:hover {
+  .modalbox_about .partners ul li:hover {
     opacity: 1;
+  }
+
+  @media (max-width: 1200px) {
+    .modalbox_about .box_inner {
+      width: 100%;
+      top: 0px;
+      bottom: 0px;
+    }
+    .modalbox_about .close a {
+      color: #000;
+    }
+    .modalbox_about .close {
+      left: auto;
+      right: 5px;
+      top: 25px;
+    }
+    .modalbox_about .close .svg {
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  @media (max-width: 1040px) {
+    .about .name h3 .bg {
+      display: none;
+    }
+    .about .about_inner {
+      flex-direction: column;
+      align-items: baseline;
+    }
+    .about .about_inner .left {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+    .about .about_inner .left .image .myDot {
+      display: none;
+    }
+    .about .about_inner .right {
+      width: 100%;
+      padding-left: 0px;
+    }
+    .about .name h3 {
+      font-size: 30px;
+    }
+    .modalbox_about .description_wrap {
+      padding: 40px;
+    }
+    .modalbox_about .my_box {
+      flex-direction: column;
+    }
+    .modalbox_about .my_box .left {
+      width: 100%;
+      padding-right: 0px;
+      margin-bottom: 50px;
+    }
+    .modalbox_about .my_box .right {
+      width: 100%;
+      padding-left: 0px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .modalbox_about .counter ul {
+      margin: 0px;
+    }
+    .modalbox_about .counter ul li {
+      width: 100%;
+      padding-left: 0px;
+    }
   }
 `;

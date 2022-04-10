@@ -1,4 +1,3 @@
-import { any } from "prop-types";
 import { Wrapper } from "./SectionTitleStyles";
 
 const SectionTitle = ({ name, title }: { name: any; title: any }) => {

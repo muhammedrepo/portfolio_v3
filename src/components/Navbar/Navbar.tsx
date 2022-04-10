@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import Logo from "../Logo/Logo";
-
+import PageLinks from "../../constants/links";
 import { TopBar, MobileMenu } from "./NavbarStyles";
 
 const Navbar = () => {
@@ -28,8 +28,8 @@ const Navbar = () => {
         <div
           className={
             topbarScroll
-              ? "coolzyte_tm_topbar opened animate"
-              : "coolzyte_tm_topbar opened"
+              ? "muhats_topbar opened animate"
+              : "muhats_topbar opened"
           }
         >
           <div className="container">
@@ -37,18 +37,7 @@ const Navbar = () => {
               <Logo />
               <div className="menu">
                 <div className="links">
-                  <ul className="anchor_nav">
-                    {["home", "about", "portfolio", "news", "contact"].map(
-                      (item) => (
-                        <li key={`link-${item}`} className="current">
-                          <a href={`#${item}`}>
-                            <span className="first">{item}</span>
-                            <span className="second">{item}</span>
-                          </a>
-                        </li>
-                      )
-                    )}
-                  </ul>
+                  <PageLinks />
                 </div>
               </div>
             </div>
@@ -57,8 +46,8 @@ const Navbar = () => {
       </TopBar>
 
       <MobileMenu>
-        <div className="coolzyte_tm_mobile_menu">
-          <div className="topbar_inner">
+        <div className="muhats_mobile_menu transition ease-in-out delay-150">
+          <div className="topbar_inner transition ease-in-out delay-250">
             <div className="container bigger">
               <div className="topbar_in">
                 <Logo />
@@ -85,15 +74,11 @@ const Navbar = () => {
               <div className="container">
                 <div className="dropdown_inner">
                   <ul className="anchor_nav">
-                    {["home", "about", "portfolio", "news", "contact"].map(
-                      (item) => (
-                        <li key={`link-${item}`}>
-                          <a href={`#${item}`} onClick={toggleMenuSwitch}>
-                            {item}
-                          </a>
-                        </li>
-                      )
-                    )}
+                    {["home", "about", "projects", "contact"].map((item) => (
+                      <li key={`link-${item}`} onClick={toggleMenuSwitch}>
+                        <a href={`#${item}`}>{item}</a>
+                      </li>
+                    ))}
                   </ul>
                 </div>
               </div>

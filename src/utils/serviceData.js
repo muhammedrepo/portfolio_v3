@@ -5,24 +5,24 @@ export const serviceData = [
     img: `${images.code}`,
     title: "Web Development",
     description:
-      "Web design is a similar process of creation, with the intention intention of the pre presenting...",
+      "Website development using a modern and cutting-edge approach that produces outcomes at a reasonable cost.",
   },
   {
     img: `${images.creative}`,
     title: "Creative Design",
     description:
-      "Web design is a similar process of creation, with the intention intention of the pre presenting...",
+      "User-friendly websites make all the difference when it comes to capturing new users' attention and retaining existing ones.",
   },
   {
     img: `${images.photoshop}`,
     title: "Branding",
     description:
-      "Web design is a similar process of creation, with the intention intention of the pre presenting...",
+      "Excellent content is your passport to attracting your audience's attention and establishing a strong brand impression over time.",
   },
   {
     img: `${images.telegram}`,
     title: "Web Design",
     description:
-      "Web design is a similar process of creation, with the intention intention of the pre presenting...",
+      "Invest in a cutting-edge website that can both meet your current demands and expand with your business.",
   },
 ];

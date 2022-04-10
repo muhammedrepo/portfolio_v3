@@ -25,25 +25,7 @@ export const PortfolioWrapper = styled.div`
     align-items: center;
     justify-content: space-between;
   }
-  .coolzyte_tm_main_title .title h3 {
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: 35px;
-    position: relative;
-  }
-  .coolzyte_tm_main_title .title h3 .bg {
-    position: absolute;
-    left: -6px;
-    top: 0px;
-    font-family: "Poppins";
-    color: transparent;
-    font-size: 150px;
-    font-weight: 900;
-    opacity: 0.1;
-    line-height: 0;
-    -webkit-text-stroke: 1px #000;
-    -webkit-user-select: none;
-  }
+
   .coolzyte_tm_portoflio .portfolio_filter {
     width: auto;
     position: relative;
@@ -57,11 +39,10 @@ export const PortfolioWrapper = styled.div`
     position: relative;
     top: 3px;
   }
-  /* .coolzyte_tm_portoflio .portfolio_filter ul li {
+  .coolzyte_tm_portoflio .portfolio_filter ul li {
     margin: 0px 30px 0px 0px;
     display: inline-block;
-    opacity: 0;
-    visibility: hidden;
+    opacity: 1;
     left: 10px;
     position: relative;
 
@@ -70,12 +51,8 @@ export const PortfolioWrapper = styled.div`
     -ms-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
-  } */
-  /* .coolzyte_tm_portoflio .portfolio_filter ul li.opened {
-    opacity: 1;
-    visibility: visible;
-    left: 0px;
-  } */
+  }
+
   .coolzyte_tm_portoflio .portfolio_filter ul li:last-child {
     margin-right: 0px;
   }
@@ -87,6 +64,8 @@ export const PortfolioWrapper = styled.div`
     position: relative;
     overflow: hidden;
     display: inline-block;
+    text-transform: capitalize;
+    cursor: pointer;
   }
   .coolzyte_tm_portoflio .portfolio_filter ul li a.current {
     color: #000;
@@ -180,57 +159,41 @@ export const PortfolioWrapper = styled.div`
   .coolzyte_tm_portoflio .portfolio_filter .wrapper a.opened .trigger:after {
     right: 14px;
   }
-  .coolzyte_tm_portoflio .portfolio_inner ul {
+
+  .item-active {
+    background-color: red;
+    color: #fff !important;
+  }
+
+  .portfolio_inner ul {
     margin: 0px 0px 0px -50px;
     list-style-type: none;
   }
-  .coolzyte_tm_portoflio .portfolio_inner ul li {
+
+  .portfolio_inner ul li {
+    flex-direction: column;
     margin: 0px 0px 40px 0px;
     float: left;
     width: 33.3333%;
     padding-left: 50px;
   }
-  .coolzyte_tm_portoflio .portfolio_inner ul li .list_inner {
+  .portfolio_inner ul li .list_inner {
     width: 100%;
     height: auto;
     clear: both;
     float: left;
     position: relative;
     overflow: hidden;
-  }
-  .coolzyte_tm_portoflio .overlay {
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    z-index: 2;
-    background-color: rgba(255, 255, 255, 0.7);
-    opacity: 0;
-    visibility: hidden;
 
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
+    cursor: pointer;
     transition: all 0.3s ease;
+
+    &:hover {
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    }
   }
-  .coolzyte_tm_portoflio .overlay .myimage {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 150px !important;
-    min-width: 150px !important;
-    z-index: 1;
-  }
-  .coolzyte_tm_portoflio
-    .portfolio_inner
-    ul
-    li
-    .list_inner
-    .image:hover
-    .overlay {
+
+  .portfolio_inner ul li .list_inner .image:hover .overlay {
     opacity: 1;
     visibility: visible;
   }
@@ -242,56 +205,115 @@ export const PortfolioWrapper = styled.div`
     right: 0px;
     z-index: 4;
   }
-  .coolzyte_tm_portoflio .portfolio_inner ul li .list_inner .image {
+  .portfolio_inner ul li .list_inner .image {
     position: relative;
     margin-bottom: 20px;
     overflow: hidden;
-  }
-  .coolzyte_tm_portoflio .portfolio_inner ul li .list_inner .image img {
-    min-width: 100%;
-    opacity: 0;
-  }
-  .coolzyte_tm_portoflio .portfolio_inner ul li .list_inner .image .main {
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+    width: 100%;
+    height: 230px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 0.5rem;
+      object-fit: cover;
+    }
+
+    @media screen and (min-width: 2000px) {
+      height: 350px;
+    }
   }
-  .coolzyte_tm_portoflio .portfolio_inner ul li .list_inner .image:hover .main {
+
+  .work-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    opacity: 0;
+    transition: all 0.3s ease;
+
+    div {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, 0.3);
+      color: #fff;
+
+      margin: 1rem;
+      font-weight: 800;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      svg {
+        width: 50%;
+        height: 50%;
+        color: #fff;
+      }
+    }
+  }
+  .app_flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .portfolio_inner ul li .list_inner .image:hover .main {
     transform: scale(1.1) translateZ(0);
   }
-  .coolzyte_tm_portoflio .portfolio_inner ul li .title h3 {
-    margin-bottom: 2px;
-  }
-  .coolzyte_tm_portoflio .portfolio_inner ul li .title h3 a {
-    margin: 0px;
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 10px;
-    color: #000;
-    text-decoration: none;
 
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-  }
-  .coolzyte_tm_portoflio .portfolio_inner ul li .title span a {
-    text-decoration: none;
-    color: #767676;
+  .work-content {
+    padding: 0.5rem;
+    width: 100%;
     position: relative;
-    display: inline-block;
-    font-style: italic;
+    flex-direction: column;
+
+    h4 {
+      margin-top: 1rem;
+      line-height: 1.5;
+
+      @media screen and (min-width: 2000px) {
+        margin-top: 3rem;
+      }
+    }
+
+    .work-tag {
+      position: absolute;
+
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+      background-color: #fff;
+      top: -25px;
+    }
+  }
+  .p-text {
+    font-size: 0.8rem;
+    text-align: left;
+    color: var(--gray-color);
+    line-height: 1.5;
+
+    @media screen and (min-width: 2000px) {
+      font-size: 1.75rem;
+    }
+  }
+
+  .bold-text {
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--black-color);
+    text-align: left;
+
+    @media screen and (min-width: 2000px) {
+      font-size: 2rem;
+    }
+
+    @media screen and (max-width: 450px) {
+      font-size: 0.9rem;
+    }
   }
 `;

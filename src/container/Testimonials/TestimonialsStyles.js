@@ -66,12 +66,13 @@ export const TestimonialsWrapper = styled.div`
     margin: 0px;
     width: 100%;
   }
+
   .coolzyte_tm_testimonials .quote_list ul li .svg {
     width: 50px;
     height: 50px;
     color: #000;
     margin-bottom: 30px;
-    opacity: 0;
+    opacity: 1;
   }
   .coolzyte_tm_testimonials .quote_list ul li.active .svg {
     opacity: 1;
@@ -87,6 +88,11 @@ export const TestimonialsWrapper = styled.div`
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
   }
+  .coolzyte_tm_testimonials .quote_list ul li .text {
+    opacity: 0;
+    visibility: hidden;
+  }
+
   .coolzyte_tm_testimonials .quote_list ul li.active .text {
     opacity: 1;
     visibility: visible;
@@ -177,21 +183,24 @@ export const TestimonialsWrapper = styled.div`
     transform: translateY(0px);
     transition-delay: 0.6s;
   }
+
   .coolzyte_tm_testimonials .testi_inner .right {
     width: 50%;
     padding-left: 50px;
   }
+
   .coolzyte_tm_testimonials .testi_inner .right .image_list {
     width: 100%;
     height: auto;
     clear: both;
     float: left;
   }
-  .coolzyte_tm_testimonials .testi_inner .right .image_list ul {
+  .coolzyte_tm_testimonials .testi_inner .right .image_list {
     margin: 0px 0px 0px -50px;
     list-style-type: none;
   }
-  .coolzyte_tm_testimonials .testi_inner .right .image_list ul li {
+
+  .coolzyte_tm_testimonials .testi_inner .right .image_list li {
     margin: 0px 0px 50px 0px;
     float: left;
     width: 50%;
@@ -205,17 +214,21 @@ export const TestimonialsWrapper = styled.div`
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
-  .coolzyte_tm_testimonials .testi_inner .right .image_list ul li.active {
+
+  .coolzyte_tm_testimonials .testi_inner .right .image_list li.active {
     opacity: 1;
   }
-  .coolzyte_tm_testimonials .testi_inner .right .image_list ul li .image {
+
+  .coolzyte_tm_testimonials .testi_inner .right .image_list li .image {
     position: relative;
   }
-  .coolzyte_tm_testimonials .testi_inner .right .image_list ul li .image img {
+
+  /* .coolzyte_tm_testimonials .testi_inner .right .image_list ul li .image img {
     min-width: 100%;
     opacity: 0;
-  }
-  .coolzyte_tm_testimonials .testi_inner .right .image_list ul li .image .main {
+  } */
+
+  /* .coolzyte_tm_testimonials .testi_inner .right .image_list li .image .main {
     position: absolute;
     top: 0px;
     bottom: 0px;
@@ -224,5 +237,84 @@ export const TestimonialsWrapper = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+  } */
+
+  @media (max-width: 1040px) {
+    .coolzyte_tm_testimonials .testi_inner {
+      flex-direction: column;
+      align-items: baseline;
+    }
+    .coolzyte_tm_testimonials .testi_inner .right {
+      display: none;
+    }
+    .coolzyte_tm_testimonials .quote_list ul {
+      flex-direction: column;
+    }
+    .coolzyte_tm_testimonials .quote_list ul li {
+      margin-bottom: 50px;
+    }
+    .coolzyte_tm_testimonials .quote_list ul li:last-child {
+      margin-bottom: 0px;
+    }
+    .coolzyte_tm_testimonials .quote_list ul li .svg {
+      opacity: 1;
+      margin-bottom: 15px;
+    }
+    .coolzyte_tm_testimonials .quote_list ul li .text {
+      opacity: 1;
+      visibility: visible;
+    }
+    .coolzyte_tm_testimonials .details .main {
+      opacity: 1;
+      transform: scale(1);
+    }
+    .coolzyte_tm_testimonials .short .author span,
+    .coolzyte_tm_testimonials .short .job span {
+      transform: translateY(0);
+    }
+    .coolzyte_tm_testimonials .testi_inner .left {
+      padding-right: 0px;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+    .coolzyte_tm_testimonials .testi_inner .right .image_list ul {
+      margin-left: -30px;
+    }
+    .coolzyte_tm_testimonials .testi_inner .right .image_list ul li {
+      padding-left: 30px;
+      margin-bottom: 30px;
+    }
+    .coolzyte_tm_testimonials .quote_list ul li {
+      position: relative;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .coolzyte_tm_testimonials .testi_inner .right .image_list ul {
+      margin-left: -20px;
+    }
+    .coolzyte_tm_testimonials .testi_inner .right .image_list ul li {
+      padding-left: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  @media (min-width: 768px) {
+    .box,
+    .box2,
+    .box3 {
+      width: 100%;
+      transform: translateX(-150%);
+    }
+    .box.active {
+      transform: translateX(0);
+    }
+
+    .box2.active {
+      transform: translateX(0);
+    }
+
+    .box3.active {
+      transform: translateX(0);
+    }
   }
 `;

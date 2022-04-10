@@ -104,5 +104,32 @@ export const Wrapper = styled.div`
   .coolzyte_tm_contact .map_wrap .map {
     min-height: 359px;
     width: 100%;
+    max-height: 400px;
+  }
+
+  img .svg {
+    fill: #fff;
+  }
+
+  @media (max-width: 1040px) {
+    .coolzyte_tm_contact .desc {
+      max-width: 100%;
+    }
+    .coolzyte_tm_contact .contact_inner .wrapper {
+      flex-direction: column;
+      align-items: baseline;
+    }
+    .coolzyte_tm_contact .contact_inner .left {
+      width: 100%;
+      padding-right: 0px;
+      margin-bottom: 40px;
+    }
+    .coolzyte_tm_contact .right {
+      width: 100%;
+      padding-left: 0px;
+    }
+    .coolzyte_tm_contact {
+      padding-top: 140px;
+    }
   }
 `;

@@ -7,23 +7,10 @@
 /*	Author: Coolzyte
 /*	This file is made for CURRENT TEMPLATE
 
-01) PORTFOLIO BASE
-02) PORTFOLIO TOPBAR
-03) PORTFOLIO MOBILE MENU
-04) PORTFOLIO HERO
-05) PORTFOLIO ABOUT
-06) PORTFOLIO SERVICES
-07) PORTFOLIO PORTFOLIO
-08) PORTFOLIO TESTIMONIALS
-09) PORTFOLIO NEWS
-10) PORTFOLIO CONTACT
-11) PORTFOLIO COPYRIGHT
-12) PORTFOLIO CURSOR
-13) PORTFOLIO SLIDER
-14) PORTFOLIO MEDIA QUERIES (FOR SMALL DEVICES)
+
 
 /*---------------------------------------------------*/
-/*	01) PORTFOLIO BASE
+/*	01) BASE
 /*---------------------------------------------------*/
 
 html {
@@ -40,6 +27,9 @@ body {
   font-weight: 400;
   background-color: #fff;
   color: #767676;
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 svg {
   fill: currentcolor;
@@ -90,6 +80,9 @@ h6 {
   color: #000;
 }
 
+/*---------------------------------------------------*/
+/*	CONTAINER STYLE
+/*---------------------------------------------------*/
 .container {
   max-width: 1400px;
   width: 100%;
@@ -105,14 +98,74 @@ h6 {
   box-sizing: border-box; /* Opera/IE 8+ */
 }
 
+@media (max-width: 1600px) {
+  .container {
+    max-width: 1120px;
+  }
+}
+
 @media (max-width: 1040px) {
   .container {
     padding: 0px 20px;
   }
 }
 
-@media (max-width: 1600px) {
-  .container {
-    max-width: 1120px;
+/*---------------------------------------------------*/
+/*	02) PRELOADER
+/*---------------------------------------------------*/
+
+.preloader {
+  position: fixed;
+  background-color: #fff;
+  z-index: 9999999999999999;
+  height: 100%;
+  width: 100%;
+
+  -webkit-transition: 0.2s all ease;
+  -o-transition: 0.2s all ease;
+  transition: 0.2s all ease;
+  -webkit-transition-delay: 0.5s;
+  -o-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+.preloader .spinner_wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 33333;
+}
+.preloader.loaded {
+  opacity: 0;
+  visibility: hidden;
+}
+.preloader:before,
+.preloader:after {
+  content: "";
+  position: absolute;
+  height: 50%;
+  width: 100%;
+  background-color: #000;
+
+  -webkit-transition: 0.7s all ease;
+  -o-transition: 0.7s all ease;
+  transition: 0.7s all ease;
+}
+.preloader:before {
+  top: 0;
+  left: 0;
+}
+.preloader:after {
+  bottom: 0;
+  left: 0;
+}
+.preloader.loaded:before,
+.preloader.loaded:after {
+  height: 0%;
+}
+
+@media (max-width: 1040px) {
+  .preloader {
+    display: none;
   }
 }

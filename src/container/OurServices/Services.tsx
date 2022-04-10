@@ -12,9 +12,6 @@ const Services = () => {
         <div className="container">
           <div className="service_inner">
             <Swiper
-              // slidesPerView={3}
-              // spaceBetween={10}
-              // slidesPerGroup={3}
               breakpoints={{
                 1024: {
                   slidesPerView: 3,

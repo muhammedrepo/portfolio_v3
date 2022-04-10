@@ -1,36 +1,31 @@
 import styled from "styled-components";
 
 export const TopBar = styled.div`
-  .coolzyte_tm_topbar {
+  .muhats_topbar {
     position: fixed;
     top: -100px;
     left: 0px;
     right: 0px;
     z-index: 10;
     padding: 20px 0px;
-
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 
     @media (max-width: 1040px) {
       display: none;
     }
   }
-  .coolzyte_tm_topbar.opened {
+  .muhats_topbar.opened {
     top: 0px;
   }
-  .coolzyte_tm_topbar.extra {
+  .muhats_topbar.extra {
     top: 0px !important;
   }
-  .coolzyte_tm_topbar.animate {
+  .muhats_topbar.animate {
     padding: 15px 0px;
     background-color: #fff;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.06);
   }
-  .coolzyte_tm_topbar .topbar_inner {
+  .muhats_topbar .topbar_inner {
     width: 100%;
     height: auto;
     clear: both;
@@ -38,33 +33,33 @@ export const TopBar = styled.div`
     align-items: center;
     justify-content: space-between;
   }
-  .coolzyte_tm_topbar .topbar_inner .logo img {
+  .muhats_topbar .topbar_inner .logo img {
     max-width: 70px;
   }
-  .coolzyte_tm_topbar .wrapper {
+  .muhats_topbar .wrapper {
     width: 30px;
     height: 17px;
     top: 5px;
     position: relative;
   }
-  .coolzyte_tm_topbar .menu {
+  .muhats_topbar .menu {
     display: flex;
     align-content: center;
   }
-  .coolzyte_tm_topbar .menu .links ul {
+  .muhats_topbar .menu .links ul {
     margin: 0px;
     list-style-type: none;
     position: relative;
     top: 5px;
   }
-  .coolzyte_tm_topbar .menu .links ul li {
+  .muhats_topbar .menu .links ul li {
     margin: 0px 30px 0px 0px;
     display: inline-block;
   }
-  .coolzyte_tm_topbar .menu .links ul li:last-child {
+  .muhats_topbar .menu .links ul li:last-child {
     margin-right: 0px;
   }
-  .coolzyte_tm_topbar .menu .links ul li a {
+  .muhats_topbar .menu .links ul li a {
     text-decoration: none;
     color: #000;
     font-family: "Poppins";
@@ -72,47 +67,36 @@ export const TopBar = styled.div`
     position: relative;
     overflow: hidden;
     display: inline-block;
-    text-transform: capitalize;
   }
-  .coolzyte_tm_topbar .menu .links ul li a .first {
+  .muhats_topbar .menu .links ul li a .first {
     position: absolute;
     transform: translateY(100%);
-
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
-  .coolzyte_tm_topbar .menu .links ul li a .second {
+  .muhats_topbar .menu .links ul li a .second {
     position: relative;
     display: block;
-
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
-  .coolzyte_tm_topbar .menu .links ul li a:hover .first {
+  .muhats_topbar .menu .links ul li a:hover .first {
     transform: translateY(0);
   }
-  .coolzyte_tm_topbar .menu .links ul li a:hover .second {
+  .muhats_topbar .menu .links ul li a:hover .second {
     transform: translateY(-100%);
   }
-  .coolzyte_tm_topbar .menu .links ul li.current a .first {
+  .muhats_topbar .menu .links ul li.current a .first {
     transform: translateY(0);
   }
-  .coolzyte_tm_topbar .menu .links ul li.current a .second {
+  .muhats_topbar .menu .links ul li:first-child.current a .second {
     transform: translateY(-100%);
   }
-  .coolzyte_tm_topbar .menu .links ul li.current a {
+  .muhats_topbar .menu .links ul li.current a {
     color: #000;
   }
 `;
 
 export const MobileMenu = styled.div`
-  .coolzyte_tm_mobile_menu {
+  .muhats_mobile_menu {
     width: 100%;
     height: auto;
     position: fixed;
@@ -125,7 +109,7 @@ export const MobileMenu = styled.div`
       display: block;
     }
   }
-  .coolzyte_tm_mobile_menu .topbar_inner {
+  .muhats_mobile_menu .topbar_inner {
     width: 100%;
     height: auto;
     float: left;
@@ -134,7 +118,7 @@ export const MobileMenu = styled.div`
     padding: 20px 0px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   }
-  .coolzyte_tm_mobile_menu .topbar_in {
+  .muhats_mobile_menu .topbar_in {
     width: 100%;
     height: auto;
     clear: both;
@@ -242,14 +226,9 @@ export const MobileMenu = styled.div`
   .my_trigger .hamburger .hamburger-inner {
     background-color: #000;
     width: 30px;
-
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
   }
-  .coolzyte_tm_mobile_menu .dropdown {
+  .muhats_mobile_menu .dropdown {
     width: 100%;
     height: auto;
     clear: both;
@@ -258,23 +237,23 @@ export const MobileMenu = styled.div`
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     display: block;
   }
-  .coolzyte_tm_mobile_menu .dropdown .dropdown_inner {
+  .muhats_mobile_menu .dropdown .dropdown_inner {
     width: 100%;
     height: auto;
     clear: both;
     float: left;
     padding: 25px 0px;
   }
-  .coolzyte_tm_mobile_menu .dropdown .dropdown_inner ul {
+  .muhats_mobile_menu .dropdown .dropdown_inner ul {
     margin: 0px;
     list-style-type: none;
   }
-  .coolzyte_tm_mobile_menu .dropdown .dropdown_inner ul li {
+  .muhats_mobile_menu .dropdown .dropdown_inner ul li {
     margin: 0px;
     float: left;
     width: 100%;
   }
-  .coolzyte_tm_mobile_menu .dropdown .dropdown_inner ul li a {
+  .muhats_mobile_menu .dropdown .dropdown_inner ul li a {
     text-decoration: none;
     color: #000;
     display: inline-block;
@@ -283,9 +262,7 @@ export const MobileMenu = styled.div`
     font-weight: 500;
     text-transform: capitalize;
   }
-  .coolzyte_tm_mobile_menu .logo img {
+  .muhats_mobile_menu .logo img {
     max-width: 70px;
   }
 `;
-
-export const MyTrigger = styled.div``;

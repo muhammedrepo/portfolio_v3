@@ -1,5 +1,7 @@
 import { SectionTitle } from "../../components";
 import { Wrapper } from "./ContactStyles";
+import MapContainer from "../../components/googleMap/GoogleMap";
+import ContactComponent from "../../components/ContactComponent/ContactComponent";
 
 const Contact = () => {
   return (
@@ -17,48 +19,16 @@ const Contact = () => {
               </p>
             </div>
             <div className="wrapper">
-              <div className="left wow fadeInLeft" data-wow-duration="0.8s">
+              <div className="left">
                 <div className="fields">
-                  <form
-                    action="/"
-                    method="post"
-                    className="contact_form"
-                    id="contact_form"
-                    autoComplete="off"
-                  >
-                    <div
-                      className="returnmessage"
-                      data-success="Your message has been received, We will contact you soon."
-                    ></div>
-                    <div className="empty_notice">
-                      <span>Please Fill Required Fields</span>
-                    </div>
-                    <div className="first">
-                      <ul>
-                        <li>
-                          <input id="name" type="text" placeholder="Name" />
-                        </li>
-                        <li>
-                          <input id="email" type="text" placeholder="Email" />
-                        </li>
-                      </ul>
-                    </div>
-                    <div className="last">
-                      <textarea id="message" placeholder="Message"></textarea>
-                    </div>
-                    <div className="coolzyte_tm_button" data-position="left">
-                      <a id="send_message" href="#">
-                        <span>Send Message</span>
-                      </a>
-                    </div>
-
-                    {/* If you want to change mail address to yours, please open modal.php and go to line 4  */}
-                  </form>
+                  <ContactComponent />
                 </div>
               </div>
-              <div className="right wow fadeInRight" data-wow-duration="0.8s">
+              <div className="right">
                 <div className="map_wrap">
-                  <div className="map" id="ieatmaps"></div>
+                  <div className="map" id="ieatmaps">
+                    <MapContainer />
+                  </div>
                 </div>
               </div>
             </div>
