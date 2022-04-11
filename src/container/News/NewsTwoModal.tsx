@@ -13,16 +13,16 @@ const NewsTwoModal = () => {
           <div className="main">
             <img src={images.news2} alt="" />
           </div>
-          <a className="full_link" href="#"></a>
+          <a className="full_link" href="#home"></a>
         </div>
         <div className="details">
           <div className="extra">
             <p className="date">
-              By <a href="#">Bona Green</a> <span>05 April 2021</span>
+              By <a href="#home">Bona Green</a> <span>05 April 2021</span>
             </p>
           </div>
           <h3 className="title">
-            <a href="#">
+            <a href="#home">
               How to be appreciated for your hard work as a developer
             </a>
           </h3>
@@ -79,27 +79,27 @@ const NewsTwoModal = () => {
             <span>Share:</span>
             <ul>
               <li>
-                <a href="#">
+                <a href="#home">
                   <img className="svg" src={images.facebook} alt="" />
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="#home">
                   <img className="svg" src={images.twitter} alt="" />
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="#home">
                   <img className="svg" src={images.instagram} alt="" />
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="#home">
                   <img className="svg" src={images.dribble} alt="" />
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="#home">
                   <img className="svg" src={images.tiktok} alt="" />
                 </a>
               </li>
