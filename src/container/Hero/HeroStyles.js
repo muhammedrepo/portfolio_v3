@@ -18,10 +18,14 @@ export const HeroWrapper = styled.div`
     top: 0px;
     bottom: 0px;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.4);
     z-index: 10;
     left: 0%;
     transition: left 0.7s ease;
+
+    @media (max-width: 1040px) {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
   }
 
   @media (max-width: 1600px) {

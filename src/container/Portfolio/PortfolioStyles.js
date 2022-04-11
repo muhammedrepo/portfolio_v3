@@ -19,7 +19,7 @@ export const PortfolioWrapper = styled.div`
     padding-top: 105px;
 
     @media (max-width: 1040px) {
-      padding-top: 60px;
+      padding-top: 30px;
     }
   }
 
@@ -36,6 +36,10 @@ export const PortfolioWrapper = styled.div`
     position: relative;
     display: flex;
     align-items: center;
+
+    @media (max-width: 1040px) {
+      display: block;
+    }
   }
   .portfolio_filter ul {
     margin: 0px;
@@ -43,6 +47,11 @@ export const PortfolioWrapper = styled.div`
     padding-right: 50px;
     position: relative;
     top: 3px;
+
+    @media (max-width: 1040px) {
+      padding-right: 0px;
+      padding-top: 40px;
+    }
   }
   .portfolio_filter ul li {
     margin: 0px 30px 0px 0px;
@@ -56,6 +65,12 @@ export const PortfolioWrapper = styled.div`
     -ms-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
+
+    @media (max-width: 1040px) {
+      left: 0px;
+      opacity: 1;
+      visibility: visible;
+    }
   }
 
   .portfolio_filter ul li:last-child {
@@ -113,6 +128,10 @@ export const PortfolioWrapper = styled.div`
     left: 0px;
     right: 0px;
     z-index: 1;
+
+    @media (max-width: 1040px) {
+      display: none;
+    }
   }
   .portfolio_filter .wrapper .trigger {
     position: absolute;
