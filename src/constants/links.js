@@ -26,7 +26,10 @@ const data = [
 const tempLinks = data.map((link) => {
   return (
     <li key={link.id} className="current">
-      <a href={`#${link.url}`}>
+      <a
+        href={`#${link.url}`}
+        className="text-black font-semibold relative overflow-hidden inline-block"
+      >
         <span className="first">{link.text}</span>
         <span className="second">{link.text}</span>
       </a>
@@ -36,5 +39,5 @@ const tempLinks = data.map((link) => {
 // I KNOW WE CAN COMBINE IT !!!!!
 
 export default () => {
-  return <ul className="anchor_nav">{tempLinks}</ul>;
+  return <ul className="m-0 relative top-1">{tempLinks}</ul>;
 };

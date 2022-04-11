@@ -8,9 +8,9 @@ import { serviceData } from "../../utils/serviceData";
 const Services = () => {
   return (
     <ServicesWrapper>
-      <div className="coolzyte_tm_service">
+      <div className="coolzyte_tm_service service_inner w-full h-auto clear-both float-left mb-32">
         <div className="container">
-          <div className="service_inner">
+          <div className="service_inner w-full h-auto clear-both float-left">
             <Swiper
               breakpoints={{
                 1024: {
@@ -36,13 +36,15 @@ const Services = () => {
             >
               {serviceData.map((item, index) => (
                 <SwiperSlide key={index}>
-                  <div className="item">
-                    <div className="list_inner">
+                  <div className="item m-0">
+                    <div className="list_inner flex flex-col sm:flex-row w-full h-auto clear-both float-left relative">
                       <img className="svg" src={item.img} alt="" />
 
-                      <div className="details">
-                        <h3>{item.title}</h3>
-                        <p>{item.description}</p>
+                      <div className="details pl-20 text-left">
+                        <h3 className="m-0 text-base font-semibold mb-4">
+                          {item.title}
+                        </h3>
+                        <p className="italic">{item.description}</p>
                       </div>
                     </div>
                   </div>

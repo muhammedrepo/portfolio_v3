@@ -28,14 +28,14 @@ const Navbar = () => {
         <div
           className={
             topbarScroll
-              ? "muhats_topbar opened animate"
-              : "muhats_topbar opened"
+              ? "sm:hidden lg:flex animate fixed left-0 right-0 z-30 py-5 px-0 transition-all top-0"
+              : "sm:hidden lg:flex fixed left-0 right-0 top-0 z-30 py-5 px-0 transition-all"
           }
         >
           <div className="container">
-            <div className="topbar_inner">
+            <div className="w-full h-auto clear-both flex items-center justify-between">
               <Logo />
-              <div className="menu">
+              <div>
                 <div className="links">
                   <PageLinks />
                 </div>

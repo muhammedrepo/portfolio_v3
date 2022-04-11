@@ -68,35 +68,26 @@ img.svg {
   color: #6f6f6f;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 500;
-  line-height: 1.4;
-  font-family: "Poppins";
-  color: #000;
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-medium leading-[1.4] font-[Poppins] text-black;
+  }
+  .container {
+    @apply max-w-[1400px] w-full ml-auto mr-auto h-auto py-0 px-10 relative clear-both box-border;
+  }
+}
+
+@layer components {
 }
 
 /*---------------------------------------------------*/
 /*	CONTAINER STYLE
 /*---------------------------------------------------*/
-.container {
-  max-width: 1400px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  height: auto;
-  padding: 0px 40px;
-  position: relative;
-  clear: both;
-
-  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box; /* Firefox, other Gecko */
-  box-sizing: border-box; /* Opera/IE 8+ */
-}
 
 @media (max-width: 1600px) {
   .container {

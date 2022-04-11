@@ -9,20 +9,20 @@ export const serviceData = [
   },
   {
     img: `${images.creative}`,
-    title: "Creative Design",
+    title: "SEO",
     description:
-      "User-friendly websites make all the difference when it comes to capturing new users' attention and retaining existing ones.",
+      "SEO is all about online authority and trustworthiness. So that potential customers may find you over your competition on search engines like Google.",
   },
   {
     img: `${images.photoshop}`,
-    title: "Branding",
+    title: "Mobile App",
     description:
-      "Excellent content is your passport to attracting your audience's attention and establishing a strong brand impression over time.",
+      "I create user-friendly mobile apps. Using AI, ML, IoT, and other cutting-edge technologies to create apps that last.",
   },
   {
     img: `${images.telegram}`,
     title: "Web Design",
     description:
-      "Invest in a cutting-edge website that can both meet your current demands and expand with your business.",
+      "I am passionate about developing websites that accurately represent your brand and effectively showcase your products and services.",
   },
 ];

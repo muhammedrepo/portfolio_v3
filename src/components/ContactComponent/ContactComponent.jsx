@@ -58,7 +58,7 @@ function ContactComponent() {
         </ul>
       </div>
       <div className="last">
-        <textarea name="message" placeholder="Message"></textarea>
+        <textarea name="message" placeholder="Message" required></textarea>
       </div>
       <div className="coolzyte_tm_button">
         <button>

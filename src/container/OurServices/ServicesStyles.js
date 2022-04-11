@@ -1,27 +1,6 @@
 import styled from "styled-components";
 
 export const ServicesWrapper = styled.div`
-  .coolzyte_tm_service {
-    margin-bottom: 140px;
-  }
-  .coolzyte_tm_service,
-  .coolzyte_tm_service .service_inner {
-    width: 100%;
-    height: auto;
-    clear: both;
-    float: left;
-  }
-
-  .coolzyte_tm_service .item {
-    margin: 0px;
-  }
-  .list_inner {
-    width: 100%;
-    height: auto;
-    clear: both;
-    float: left;
-    position: relative;
-  }
   .coolzyte_tm_service .item .svg {
     position: absolute;
     left: 0px;
@@ -29,25 +8,7 @@ export const ServicesWrapper = styled.div`
     width: 50px;
     height: 50px;
     color: #000;
-
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -ms-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
     transition: all 0.4s ease;
-  }
-  .coolzyte_tm_service .item .details {
-    padding-left: 75px;
-    text-align: left;
-  }
-  .coolzyte_tm_service .item .details h3 {
-    margin: 0px;
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 16px;
-  }
-  .coolzyte_tm_service .item .details p {
-    font-style: italic;
   }
 
   .swiper {
@@ -83,11 +44,6 @@ export const ServicesWrapper = styled.div`
   }
 
   @media (max-width: 640px) {
-    .list_inner {
-      display: flex;
-      flex-direction: column;
-    }
-
     .coolzyte_tm_service .item .details {
       margin-top: 20px;
       padding-left: 0px;

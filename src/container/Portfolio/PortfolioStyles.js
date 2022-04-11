@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const PortfolioWrapper = styled.div`
-  .coolzyte_tm_portoflio {
+  .portoflio {
     width: 100%;
     height: auto;
     clear: both;
@@ -10,14 +10,20 @@ export const PortfolioWrapper = styled.div`
     padding: 205px 0px 100px 0px;
     background-color: #f8f9fa;
   }
-  .coolzyte_tm_portoflio .portfolio_inner {
+
+  .portfolio_inner {
     width: 100%;
     height: auto;
     clear: both;
     float: left;
     padding-top: 105px;
+
+    @media (max-width: 1040px) {
+      padding-top: 60px;
+    }
   }
-  .coolzyte_tm_main_title {
+
+  .main_title {
     width: 100%;
     height: auto;
     clear: both;
@@ -25,21 +31,20 @@ export const PortfolioWrapper = styled.div`
     align-items: center;
     justify-content: space-between;
   }
-
-  .coolzyte_tm_portoflio .portfolio_filter {
+  .portfolio_filter {
     width: auto;
     position: relative;
     display: flex;
     align-items: center;
   }
-  .coolzyte_tm_portoflio .portfolio_filter ul {
+  .portfolio_filter ul {
     margin: 0px;
     list-style-type: none;
     padding-right: 50px;
     position: relative;
     top: 3px;
   }
-  .coolzyte_tm_portoflio .portfolio_filter ul li {
+  .portfolio_filter ul li {
     margin: 0px 30px 0px 0px;
     display: inline-block;
     opacity: 1;
@@ -53,10 +58,10 @@ export const PortfolioWrapper = styled.div`
     transition: all 0.2s ease;
   }
 
-  .coolzyte_tm_portoflio .portfolio_filter ul li:last-child {
+  .portfolio_filter ul li:last-child {
     margin-right: 0px;
   }
-  .coolzyte_tm_portoflio .portfolio_filter ul li a {
+  .portfolio_filter ul li button {
     text-decoration: none;
     color: #000;
     font-family: "Poppins";
@@ -67,10 +72,10 @@ export const PortfolioWrapper = styled.div`
     text-transform: capitalize;
     cursor: pointer;
   }
-  .coolzyte_tm_portoflio .portfolio_filter ul li a.current {
+  .portfolio_filter ul li button.current {
     color: #000;
   }
-  .coolzyte_tm_portoflio .portfolio_filter ul li a .first {
+  .portfolio_filter ul li button .first {
     position: absolute;
     transform: translateY(100%);
 
@@ -80,7 +85,7 @@ export const PortfolioWrapper = styled.div`
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
-  .coolzyte_tm_portoflio .portfolio_filter ul li a .second {
+  /* .portfolio_filter ul li button .second {
     position: relative;
     display: block;
 
@@ -89,19 +94,19 @@ export const PortfolioWrapper = styled.div`
     -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
-  }
-  .coolzyte_tm_portoflio .portfolio_filter ul li a:hover .first {
+  } */
+  .portfolio_filter ul li button:hover .first {
     transform: translateY(0);
   }
-  .coolzyte_tm_portoflio .portfolio_filter ul li a:hover .second {
+  .portfolio_filter ul li button:hover .second {
     transform: translateY(-100%);
   }
-  .coolzyte_tm_portoflio .portfolio_filter .wrapper {
+  .portfolio_filter .wrapper {
     width: 30px;
     height: 17px;
     position: relative;
   }
-  .coolzyte_tm_portoflio .portfolio_filter .wrapper a {
+  .portfolio_filter .wrapper button {
     position: absolute;
     top: 0px;
     bottom: 0px;
@@ -109,7 +114,7 @@ export const PortfolioWrapper = styled.div`
     right: 0px;
     z-index: 1;
   }
-  .coolzyte_tm_portoflio .portfolio_filter .wrapper .trigger {
+  .portfolio_filter .wrapper .trigger {
     position: absolute;
     width: 30px;
     height: 3px;
@@ -117,7 +122,7 @@ export const PortfolioWrapper = styled.div`
     top: 50%;
     transform: translateY(-50%);
   }
-  .coolzyte_tm_portoflio .portfolio_filter .wrapper .trigger:before {
+  .portfolio_filter .wrapper .trigger:before {
     position: absolute;
     content: "";
     width: 15px;
@@ -132,7 +137,7 @@ export const PortfolioWrapper = styled.div`
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
-  .coolzyte_tm_portoflio .portfolio_filter .wrapper .trigger:after {
+  .portfolio_filter .wrapper .trigger:after {
     position: absolute;
     content: "";
     width: 15px;
@@ -147,27 +152,27 @@ export const PortfolioWrapper = styled.div`
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
-  .coolzyte_tm_portoflio .portfolio_filter .wrapper a:hover .trigger:before {
+  .portfolio_filter .wrapper button:hover .trigger:before {
     left: 14px;
   }
-  .coolzyte_tm_portoflio .portfolio_filter .wrapper a:hover .trigger:after {
+  .portfolio_filter .wrapper button:hover .trigger:after {
     right: 14px;
   }
-  .coolzyte_tm_portoflio .portfolio_filter .wrapper a.opened .trigger:before {
+  .portfolio_filter .wrapper button.opened .trigger:before {
     left: 14px;
   }
-  .coolzyte_tm_portoflio .portfolio_filter .wrapper a.opened .trigger:after {
+  .portfolio_filter .wrapper button.opened .trigger:after {
     right: 14px;
-  }
-
-  .item-active {
-    background-color: red;
-    color: #fff !important;
   }
 
   .portfolio_inner ul {
     margin: 0px 0px 0px -50px;
     list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    @media (max-width: 768px) {
+      margin: 0px;
+    }
   }
 
   .portfolio_inner ul li {
@@ -176,6 +181,15 @@ export const PortfolioWrapper = styled.div`
     float: left;
     width: 33.3333%;
     padding-left: 50px;
+
+    @media (max-width: 1040px) {
+      width: 50%;
+    }
+
+    @media (max-width: 768px) {
+      width: 100%;
+      padding-left: 0px;
+    }
   }
   .portfolio_inner ul li .list_inner {
     width: 100%;
@@ -184,13 +198,6 @@ export const PortfolioWrapper = styled.div`
     float: left;
     position: relative;
     overflow: hidden;
-
-    cursor: pointer;
-    transition: all 0.3s ease;
-
-    &:hover {
-      box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
-    }
   }
 
   .portfolio_inner ul li .list_inner .image:hover .overlay {
@@ -212,13 +219,6 @@ export const PortfolioWrapper = styled.div`
 
     width: 100%;
     height: 230px;
-
-    img {
-      width: 100%;
-      height: 100%;
-      border-radius: 0.5rem;
-      object-fit: cover;
-    }
 
     @media screen and (min-width: 2000px) {
       height: 350px;
@@ -264,7 +264,7 @@ export const PortfolioWrapper = styled.div`
   }
 
   .portfolio_inner ul li .list_inner .image:hover .main {
-    transform: scale(1.1) translateZ(0);
+    transform: scale(1.1) translateX(0);
   }
 
   .work-content {

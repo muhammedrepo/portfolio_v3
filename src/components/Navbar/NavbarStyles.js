@@ -1,96 +1,46 @@
 import styled from "styled-components";
 
 export const TopBar = styled.div`
-  .muhats_topbar {
-    position: fixed;
-    top: -100px;
-    left: 0px;
-    right: 0px;
-    z-index: 10;
-    padding: 20px 0px;
-    transition: all 0.3s ease;
-
-    @media (max-width: 1040px) {
-      display: none;
-    }
-  }
-  .muhats_topbar.opened {
-    top: 0px;
-  }
-  .muhats_topbar.extra {
-    top: 0px !important;
-  }
-  .muhats_topbar.animate {
+  .animate {
     padding: 15px 0px;
     background-color: #fff;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.06);
   }
-  .muhats_topbar .topbar_inner {
-    width: 100%;
-    height: auto;
-    clear: both;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .muhats_topbar .topbar_inner .logo img {
-    max-width: 70px;
-  }
-  .muhats_topbar .wrapper {
-    width: 30px;
-    height: 17px;
-    top: 5px;
-    position: relative;
-  }
-  .muhats_topbar .menu {
-    display: flex;
-    align-content: center;
-  }
-  .muhats_topbar .menu .links ul {
-    margin: 0px;
-    list-style-type: none;
-    position: relative;
-    top: 5px;
-  }
-  .muhats_topbar .menu .links ul li {
+
+  .links ul li {
     margin: 0px 30px 0px 0px;
     display: inline-block;
   }
-  .muhats_topbar .menu .links ul li:last-child {
+  .links ul li:last-child {
     margin-right: 0px;
   }
-  .muhats_topbar .menu .links ul li a {
+  .links ul li a {
     text-decoration: none;
-    color: #000;
     font-family: "Poppins";
-    font-weight: 600;
-    position: relative;
-    overflow: hidden;
-    display: inline-block;
   }
-  .muhats_topbar .menu .links ul li a .first {
+  .links ul li a .first {
     position: absolute;
     transform: translateY(100%);
     transition: all 0.3s ease;
   }
-  .muhats_topbar .menu .links ul li a .second {
+  .links ul li a .second {
     position: relative;
     display: block;
     transition: all 0.3s ease;
   }
-  .muhats_topbar .menu .links ul li a:hover .first {
+  .links ul li a:hover .first {
     transform: translateY(0);
   }
-  .muhats_topbar .menu .links ul li a:hover .second {
+  .links ul li a:hover .second {
     transform: translateY(-100%);
   }
-  .muhats_topbar .menu .links ul li.current a .first {
+  .links ul li.current a .first {
     transform: translateY(0);
   }
-  .muhats_topbar .menu .links ul li:first-child.current a .second {
+  .links ul li:first-child.current a .second {
     transform: translateY(-100%);
   }
-  .muhats_topbar .menu .links ul li.current a {
+  .links ul li.current a {
     color: #000;
   }
 `;
@@ -103,7 +53,7 @@ export const MobileMenu = styled.div`
     top: 0px;
     left: 0px;
     display: none;
-    z-index: 10;
+    z-index: 50;
 
     @media (max-width: 1040px) {
       display: block;

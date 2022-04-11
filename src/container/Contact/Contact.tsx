@@ -6,7 +6,7 @@ import ContactComponent from "../../components/ContactComponent/ContactComponent
 const Contact = () => {
   return (
     <Wrapper>
-      <div className="coolzyte_tm_contact" id="contact">
+      <div className="contact" id="contact">
         <div className="bg_image"></div>
         <div className="container">
           <div className="contact_inner">
@@ -14,8 +14,8 @@ const Contact = () => {
 
             <div className="desc">
               <p>
-                Please fill out the form on this section to contact with me. Or
-                call between 9:00 a.m. and 8:00 p.m. ET, Monday through Friday
+                To contact me, please use the form in this section. Or call
+                Monday through Friday between 9:00 a.m. and 8:00 p.m. ET.
               </p>
             </div>
             <div className="wrapper">

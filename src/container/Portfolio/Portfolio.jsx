@@ -8,15 +8,15 @@ import Categories from "./Categories";
 import PortfolioItem from "./PortfolioItem";
 
 const allCategories = [
-  "all",
+  "All",
   ...new Set(workData.map((work) => work.category)),
 ];
 
 const Portfolio = () => {
   const [menuItems, setMenuItems] = useState(workData);
-  const [categories, setCategories] = useState(allCategories);
+  const [categories] = useState(allCategories);
   const filterItems = (category) => {
-    if (category === "all") {
+    if (category === "All") {
       setMenuItems(workData);
       return;
     }
@@ -26,9 +26,9 @@ const Portfolio = () => {
 
   return (
     <PortfolioWrapper>
-      <div className="coolzyte_tm_portoflio" id="projects">
+      <div className="portoflio" id="projects">
         <div className="container">
-          <div className="coolzyte_tm_main_title">
+          <div className="main_title">
             <SectionTitle name="Featured Works" title="Portfolio" />
             <Categories categories={categories} filterItems={filterItems} />
           </div>

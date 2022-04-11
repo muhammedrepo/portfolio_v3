@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import GoogleMapReact from "google-map-react";
+import mapStyles from "./mapStyles";
 
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
@@ -20,6 +21,9 @@ class GoogleMap extends Component {
           bootstrapURLKeys={{ key: "AIzaSyAwO9Q7xtEzR4U-RFK5EXNK9nd9BQN-RIg" }}
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
+          options={{
+            styles: mapStyles,
+          }}
         >
           <AnyReactComponent lat={6.524379} lng={3.379206} text="My Marker" />
         </GoogleMapReact>

@@ -1,12 +1,6 @@
 import { Wrapper } from "./FooterStyles";
 
-import {
-  FaDribbbleSquare,
-  FaFacebookF,
-  FaInstagramSquare,
-  FaTwitter,
-  FaYoutube,
-} from "react-icons/fa";
+import { FaCodepen, FaDribbble, FaGithub, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -33,7 +27,7 @@ const Footer = () => {
                 data-wow-delay="0.4s"
               >
                 <span>
-                  <a href="#href">info@muhats.com</a>
+                  <a href="#href">coolzyte@gmail.com</a>
                 </span>
                 <span>+234 8076319032</span>
               </li>
@@ -45,17 +39,7 @@ const Footer = () => {
                 <div className="social">
                   <ul>
                     <li>
-                      <a href="#href">
-                        <span className="first">
-                          <FaFacebookF />
-                        </span>
-                        <span className="second">
-                          <FaFacebookF />
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#href">
+                      <a href="#home">
                         <span className="first">
                           <FaTwitter />
                         </span>
@@ -65,32 +49,40 @@ const Footer = () => {
                       </a>
                     </li>
                     <li>
-                      <a href="#href">
+                      <a href="#home">
                         <span className="first">
-                          <FaInstagramSquare />
+                          <FaDribbble />
                         </span>
                         <span className="second">
-                          <FaInstagramSquare />
+                          <FaDribbble />
                         </span>
                       </a>
                     </li>
                     <li>
-                      <a href="#href">
+                      <a
+                        href="https://codepen.io/coolzyte"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                      >
                         <span className="first">
-                          <FaDribbbleSquare />
+                          <FaCodepen />
                         </span>
                         <span className="second">
-                          <FaDribbbleSquare />
+                          <FaCodepen />
                         </span>
                       </a>
                     </li>
                     <li>
-                      <a href="#href">
+                      <a
+                        href="https://github.com/coolzyte"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                      >
                         <span className="first">
-                          <FaYoutube />
+                          <FaGithub />
                         </span>
                         <span className="second">
-                          <FaYoutube />
+                          <FaGithub />
                         </span>
                       </a>
                     </li>
