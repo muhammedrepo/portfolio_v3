@@ -30,7 +30,12 @@ const Hero = () => {
         <div className="content w-full h-full relative z-20">
           <div className="container h-full">
             <div className="content_inner absolute top-1/2 -translate-y-1/2">
-              <div className="name">
+              <div
+                data-aos="zoom-in"
+                data-aos-duration="1500"
+                data-aos-delay="500"
+                className="name"
+              >
                 <h3 className="stroke text-black text-8xl font-extrabold uppercase m-0 p-0 ">
                   Muhammed
                 </h3>

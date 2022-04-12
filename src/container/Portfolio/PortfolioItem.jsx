@@ -16,7 +16,7 @@ const PortfolioItem = ({ workData }) => {
             menuItem;
 
           return (
-            <li className="portfolio-item" key={id}>
+            <li data-aos="flip-left" className="portfolio-item" key={id}>
               <div className="list_inner">
                 <div className="image app_flex">
                   <div className="main ">

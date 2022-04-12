@@ -11,7 +11,13 @@ import { Autoplay } from "swiper";
 const AboutModal = ({ closeModal }: { closeModal: any }) => {
   return (
     <ModalAbout>
-      <div className="modalbox_about" onClick={() => closeModal()}>
+      <div
+        data-aos="zoom-in"
+        data-aos-duration="500"
+        data-aos-delay="500"
+        className="modalbox_about"
+        onClick={() => closeModal()}
+      >
         <div className="box_inner">
           <div className="close">
             <button onClick={() => closeModal()}>

@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import {
   Hero,
   About,
@@ -6,42 +6,53 @@ import {
   Portfolio,
   Testimonials,
   Contact,
-  News,
 } from "./container";
 
-import { Navbar, Loading } from "./components";
+import { Navbar } from "./components";
 import { AppWrap } from "./AppStyles";
 import Footer from "./components/Footer/Footer";
 import AboutModal from "./components/Modal/AboutModal";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-function App() {
-  // const [isLoading, setIsLoading] = useState(true);
+function App(): JSX.Element {
+  const [loading, setLoading] = useState(true);
   const [openModal, setOpenModal] = useState(false);
+
+  const spinner = document.getElementById("spinner");
+  if (spinner) {
+    setTimeout(() => {
+      spinner.style.display = "none";
+      setLoading(false);
+    }, 2000);
+  }
+
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
 
   const handleClick = () => {
     setOpenModal(true);
   };
 
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setIsLoading(false);
-  //   }, 1000);
-  // });
-  // if (isLoading) return <Loading />;
   return (
-    <AppWrap>
-      <Navbar />
-      {openModal && <AboutModal closeModal={setOpenModal} />}
-      <Hero />
+    <>
+      {!loading && (
+        <AppWrap>
+          <Navbar />
+          {openModal && <AboutModal closeModal={setOpenModal} />}
+          <Hero />
 
-      <About handleClick={handleClick} />
-      <Services />
-      <Portfolio />
-      <Testimonials />
-      {/* <News /> */}
-      <Contact />
-      <Footer />
-    </AppWrap>
+          <About handleClick={handleClick} />
+          <Services />
+          <Portfolio />
+          <Testimonials />
+          {/* <News /> */}
+          <Contact />
+          <Footer />
+        </AppWrap>
+      )}
+    </>
   );
 }
 

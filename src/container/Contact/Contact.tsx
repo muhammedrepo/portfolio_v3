@@ -8,7 +8,7 @@ const Contact = () => {
     <Wrapper>
       <div className="contact" id="contact">
         <div className="bg_image"></div>
-        <div className="container">
+        <div data-aos="fade-in" className="container">
           <div className="contact_inner">
             <SectionTitle name="Get in Touch" title="Contact" />
 
@@ -24,7 +24,7 @@ const Contact = () => {
                   <ContactComponent />
                 </div>
               </div>
-              <div className="right">
+              <div data-aos="zoom-in" className="right">
                 <div className="map_wrap">
                   <div className="map" id="ieatmaps">
                     <MapContainer />

@@ -11,14 +11,14 @@ const About = ({ handleClick }: { handleClick: any }) => {
       >
         <div className="container">
           <div className="about_inner w-full h-full clear-both flex items-center">
-            <div className="left w-[40%]">
+            <div data-aos="fade-right" className="left w-[40%]">
               <img
                 className="thumbnail min-w-[10%]"
                 src={images.about5}
                 alt=""
               />
             </div>
-            <div className="right w-[60%] pl-20">
+            <div data-aos="fade-left" className="right w-[60%] pl-20">
               <div className="name w-full float-left border-b pb-8 mb-8">
                 <SectionTitle name="Muhammed" title="About" />
 

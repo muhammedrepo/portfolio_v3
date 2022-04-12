@@ -107,7 +107,7 @@ img.svg {
 
 .preloader {
   position: fixed;
-  background-color: #fff;
+  background-color: #000;
   z-index: 9999999999999999;
   height: 100%;
   width: 100%;

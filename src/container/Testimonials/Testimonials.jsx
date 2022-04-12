@@ -9,7 +9,7 @@ const Testimonials = () => {
   return (
     <TestimonialsWrapper>
       <div className="w-full h-auto clear-both float-left mb-24">
-        <div className="container">
+        <div data-aos="fade-left" className="container">
           <SectionTitle name="What Clients Say" title="Testimonials" />
 
           <div className="testi_inner w-full h-auto clear-both flex items-center pt-[105px]">
