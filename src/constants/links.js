@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-scroll";
 const data = [
   {
     id: 1,
@@ -26,13 +26,17 @@ const data = [
 const tempLinks = data.map((link) => {
   return (
     <li key={link.id} className="current">
-      <a
-        href={`#${link.url}`}
-        className="text-black font-semibold relative overflow-hidden inline-block"
+      <Link
+        className="text-black font-semibold relative overflow-hidden inline-block cursor-pointer"
+        to={`${link.url}`}
+        spy={true}
+        smooth={true}
+        offset={50}
+        duration={500}
       >
         <span className="first">{link.text}</span>
         <span className="second">{link.text}</span>
-      </a>
+      </Link>
     </li>
   );
 });

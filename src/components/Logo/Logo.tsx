@@ -1,11 +1,12 @@
 import { images } from "../../constants";
+import { Link } from "react-scroll";
 
 const Logo = () => {
   return (
     <div>
-      <a href="#home">
+      <Link to="home" spy={true} smooth={true} offset={50} duration={500}>
         <img src={images.logo} alt="logo" />
-      </a>
+      </Link>
     </div>
   );
 };
