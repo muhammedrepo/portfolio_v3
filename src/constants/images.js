@@ -1,7 +1,6 @@
 import logo from "../assets/logo.png";
 import slide2 from "../assets/slider/2.png";
 import slide5 from "../assets/slider/5.jpg";
-
 import about1 from "../assets/about/1.jpg";
 import about2 from "../assets/about/2.jpg";
 import about3 from "../assets/about/3.jpg";
@@ -28,9 +27,9 @@ import portfolio1 from "../assets/portfolio/1.png";
 import portfolio2 from "../assets/portfolio/2.png";
 import portfolio3 from "../assets/portfolio/3.png";
 import portfolio4 from "../assets/portfolio/4.png";
+import portfolio5 from "../assets/portfolio/5.png";
 import portfolio6 from "../assets/portfolio/6.png";
-import portfolio12 from "../assets/portfolio/12.jpg";
-import portfolio13 from "../assets/portfolio/13.jpg";
+
 import news1 from "../assets/news/1.jpg";
 import news2 from "../assets/news/2.jpg";
 import news3 from "../assets/news/3.jpg";
@@ -64,9 +63,9 @@ export default {
   portfolio2,
   portfolio3,
   portfolio4,
+  portfolio5,
   portfolio6,
-  portfolio12,
-  portfolio13,
+
   hero,
   news1,
   news2,
