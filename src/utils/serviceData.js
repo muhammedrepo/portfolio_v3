@@ -14,7 +14,7 @@ export const serviceData = [
       "SEO is all about online authority and trustworthiness. So that potential customers may find you over your competition on search engines like Google.",
   },
   {
-    img: `${images.photoshop}`,
+    img: `${images.mobileApp}`,
     title: "Mobile App",
     description:
       "I create user-friendly mobile apps. Using AI, ML, IoT, and other cutting-edge technologies to create apps that last.",

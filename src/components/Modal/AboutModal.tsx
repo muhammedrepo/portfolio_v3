@@ -48,7 +48,9 @@ const AboutModal = ({ closeModal }: { closeModal: any }) => {
                   </div>
                   <div className="progress_inner">
                     <span>
-                      <span className="label">Bootstrap</span>{" "}
+                      <span className="label">
+                        Bootstrap &amp; Tailwindcss &amp; MaterialUI
+                      </span>{" "}
                       <span className="number">
                         <ThumbUpIcon />
                       </span>
@@ -61,7 +63,7 @@ const AboutModal = ({ closeModal }: { closeModal: any }) => {
                   </div>
                   <div className="progress_inner">
                     <span>
-                      <span className="label">Sass</span>{" "}
+                      <span className="label">Sass &amp; Styled-Component</span>{" "}
                       <span className="number">
                         <ThumbUpIcon />
                       </span>
@@ -74,7 +76,10 @@ const AboutModal = ({ closeModal }: { closeModal: any }) => {
                   </div>
                   <div className="progress_inner">
                     <span>
-                      <span className="label"> Javascript</span>{" "}
+                      <span className="label">
+                        {" "}
+                        Javascript &amp; Typescript
+                      </span>{" "}
                       <span className="number">
                         <ThumbUpIcon />
                       </span>

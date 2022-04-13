@@ -1,16 +1,16 @@
 import logo from "../assets/logo.png";
 import slide2 from "../assets/slider/2.png";
 import slide5 from "../assets/slider/5.jpg";
-import about1 from "../assets/about/1.jpg";
-import about2 from "../assets/about/2.jpg";
-import about3 from "../assets/about/3.jpg";
+import about1 from "../assets/testimonials/1.jpg";
+import about2 from "../assets/testimonials/2.jpg";
+import about3 from "../assets/testimonials/3.jpg";
 import about5 from "../assets/about/5.jpeg";
 import quote1 from "../assets/svg/quote-1.svg";
 import hero from "../assets/svg/hero.svg";
 import code from "../assets/svg/code.svg";
 import creative from "../assets/svg/creativity.svg";
 import telegram from "../assets/svg/telegram.svg";
-import photoshop from "../assets/svg/photoshop.svg";
+import mobileApp from "../assets/svg/mobileApp.svg";
 import facebook from "../assets/svg/social/facebook.svg";
 import twitter from "../assets/svg/social/twitter.svg";
 import instagram from "../assets/svg/social/instagram.svg";
@@ -55,7 +55,7 @@ export default {
   code,
   creative,
   telegram,
-  photoshop,
+  mobileApp,
   thumb1,
   thumb2,
   thumb3,

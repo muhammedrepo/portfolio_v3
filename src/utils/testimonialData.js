@@ -20,7 +20,7 @@ export const testiData = [
   },
 
   {
-    author: "Nike Seweje",
+    author: "Olaide Amzat",
     desc: "Thank you for your assistance in transferring a new website.You also gave us practical tips for improving our Google ranking (SEO) and generating leads online. I definitely recommend Muhammed for all web design needs.",
     job: "Entrepreneur",
     authorImage: `${images.about3}`,
