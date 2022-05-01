@@ -70,10 +70,10 @@ const Navbar = () => {
             </div>
           </div>
           {toggleMenu && (
-            <div className="dropdown">
-              <div className="container">
-                <div className="dropdown_inner">
-                  <ul className="anchor_nav">
+            <div className="dropdown transition-all delay-200 ease-linear">
+              <div className="container transition-all delay-500 ease-linear">
+                <div className="dropdown_inner transition-all delay-500 ease-linear">
+                  <ul className={toggleMenu ? "show-links" : "links"}>
                     {["home", "about", "projects", "contact"].map((item) => (
                       <li key={`link-${item}`} onClick={toggleMenuSwitch}>
                         <a href={`#${item}`}>{item}</a>

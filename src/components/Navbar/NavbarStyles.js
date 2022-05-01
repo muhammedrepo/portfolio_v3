@@ -186,6 +186,7 @@ export const MobileMenu = styled.div`
     background-color: #fff;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     display: block;
+    transition: all 0.5s ease;
   }
   .muhats_mobile_menu .dropdown .dropdown_inner {
     width: 100%;
@@ -193,24 +194,40 @@ export const MobileMenu = styled.div`
     clear: both;
     float: left;
     padding: 25px 0px;
+    transition: all 0.5s linear;
   }
   .muhats_mobile_menu .dropdown .dropdown_inner ul {
     margin: 0px;
     list-style-type: none;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
   }
+
   .muhats_mobile_menu .dropdown .dropdown_inner ul li {
     margin: 0px;
     float: left;
     width: 100%;
+    padding-left: 1.5rem;
   }
   .muhats_mobile_menu .dropdown .dropdown_inner ul li a {
     text-decoration: none;
     color: #000;
-    display: inline-block;
+    display: block;
     padding: 4px 0px;
     font-family: "Poppins";
     font-weight: 500;
     text-transform: capitalize;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  ul li a:hover {
+    background: #f1f1f1;
+    color: #222;
+    padding-right: 1rem;
   }
   .muhats_mobile_menu .logo img {
     max-width: 70px;

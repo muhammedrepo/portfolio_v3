@@ -22,13 +22,13 @@ export const workData = [
     id: 1,
   },
   {
-    title: "TravelAdvisor",
-    description: "TravelApp Using NextJS",
+    title: "Startup Template",
+    description: "Startup",
     category: "React",
     image: `${images.portfolio3}`,
-    tags: ["React, MaterialUI"],
-    codeLink: "https://github.com/muhammedtijani/travel-agency",
-    visit: "https://traveladvisor.coolzyte.com/",
+    tags: ["React, TailwindCSS"],
+    codeLink: "https://github.com/coolzyte/startup",
+    visit: "https://startup.muhats.com/",
     id: 2,
   },
   {
