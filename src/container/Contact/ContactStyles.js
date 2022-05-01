@@ -58,6 +58,7 @@ export const Wrapper = styled.div`
   .contact .fields ul li input {
     width: 100%;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 4px;
     background-color: transparent;
     font-style: italic;
   }
@@ -70,12 +71,14 @@ export const Wrapper = styled.div`
     border: 1px solid rgba(0, 0, 0, 0.1);
     height: 120px;
     resize: none;
+    padding: 4px;
     margin-bottom: 20px;
     background-color: transparent;
     font-style: italic;
   }
   .contact .fields .last textarea:focus {
     outline: none;
+
     border: 1px solid rgba(0, 0, 0, 0.3);
   }
   .contact .empty_notice {

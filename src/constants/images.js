@@ -1,6 +1,6 @@
 import logo from "../assets/logo.png";
 import slide2 from "../assets/slider/2.png";
-import slide5 from "../assets/slider/5.jpg";
+
 import about1 from "../assets/testimonials/1.jpg";
 import about2 from "../assets/testimonials/2.jpg";
 import about3 from "../assets/testimonials/3.jpg";
@@ -45,7 +45,6 @@ import partner8 from "../assets/partners/8.png";
 export default {
   logo,
   slide2,
-  slide5,
 
   about1,
   about2,

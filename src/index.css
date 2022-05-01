@@ -75,14 +75,11 @@ img.svg {
   h4,
   h5,
   h6 {
-    @apply font-medium leading-[1.4] font-[Poppins] text-black;
+    @apply text-[rgba(0,0,0,1.0)]  font-medium leading-[1.4] font-[Poppins];
   }
   .container {
     @apply max-w-[1400px] w-full ml-auto mr-auto h-auto py-0 px-10 relative clear-both box-border;
   }
-}
-
-@layer components {
 }
 
 /*---------------------------------------------------*/

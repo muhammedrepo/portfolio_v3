@@ -5,7 +5,7 @@ import CSS from "csstype";
 
 const Hero = () => {
   const bgStyle: CSS.Properties = {
-    backgroundImage: `url(${images.slide5})`,
+    backgroundImage: `url(${images.slide2})`,
   };
   return (
     <HeroWrapper>
@@ -36,13 +36,13 @@ const Hero = () => {
                 data-aos-delay="500"
                 className="name"
               >
-                <h3 className="stroke text-black text-8xl font-extrabold uppercase m-0 p-0 ">
+                <h3 className="stroke text-black text-8xl font-extrabold m-0 p-0 ">
+                  Hi, my name is
+                </h3>
+                <h3 className=" text-8xl font-extrabold uppercase m-0 p-0">
                   Muhammed
                 </h3>
-                <h3 className="text-black text-8xl font-extrabold uppercase m-0 p-0">
-                  Tijani
-                </h3>
-                <span className="font-[Poppins] font-semibold inline-block pt-5 italic">
+                <span className="font-[Poppins] font-bold inline-block pt-5 italic">
                   Creative Web &amp; App Developer
                 </span>
               </div>
