@@ -1,9 +1,9 @@
 import logo from "../assets/logo.png";
 import slide2 from "../assets/slider/2.png";
 
-import about1 from "../assets/testimonials/1.jpg";
-import about2 from "../assets/testimonials/2.jpg";
-import about3 from "../assets/testimonials/3.jpg";
+import about1 from "../assets/testimonials/1.png";
+import about2 from "../assets/testimonials/2.png";
+import about3 from "../assets/testimonials/3.png";
 import about5 from "../assets/about/5.jpeg";
 import quote1 from "../assets/svg/quote-1.svg";
 import hero from "../assets/svg/hero.svg";
