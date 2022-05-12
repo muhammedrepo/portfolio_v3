@@ -28,15 +28,16 @@ const About = ({ handleClick }: { handleClick: any }) => {
               </div>
               <div className="text w-full float-left mb-6 italic">
                 <p>
-                  My name is Muhammed Tijani. I work as a web developer, and I
-                  am really enthusiastic and dedicated to my job.
+                  My name is Muhammed and I enjoy creating things that live on
+                  the internet. I work as a web developer, and I am really
+                  enthusiastic and dedicated to my job.
                 </p>
                 <p>
-                  Over the course of my years of experience as a Web developer,
-                  I have gained the skills and expertise essential to ensure the
-                  successful completion of your project. Every stage of the
-                  design process, from brainstorming to cooperation, is
-                  something I look forward to.
+                  Since I started working as a freelance designer almost 7 years
+                  ago, I've done remote work for agencies, consulted for
+                  startups, and worked with talented people to make digital
+                  products for both business and consumer use. I'm always
+                  working to get better at design, one problem at a time.
                 </p>
               </div>
               <div className="coolzyte_tm_button">

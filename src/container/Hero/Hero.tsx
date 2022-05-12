@@ -37,7 +37,7 @@ const Hero = () => {
                 className="name"
               >
                 <h3 className="stroke text-black text-8xl font-extrabold m-0 p-0 ">
-                  Hi, my name is
+                  Hi, I'm
                 </h3>
                 <h3 className=" text-8xl font-extrabold uppercase m-0 p-0">
                   Muhammed
