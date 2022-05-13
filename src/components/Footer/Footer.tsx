@@ -11,25 +11,34 @@ const Footer = () => {
             <ul>
               <li className="wow fadeInDown" data-wow-duration="0.8s">
                 <span>Muhats</span>
-                <span>PORTFOLIO</span>
+                <span>Creative Web & App Development</span>
               </li>
-              <li
+              {/* <li
                 className="wow fadeInDown"
                 data-wow-duration="0.8s"
                 data-wow-delay="0.2s"
               >
                 <span>Pentagon Plaza,</span>
                 <span>Allen Ave, Lagos, Nigeira</span>
-              </li>
+              </li> */}
               <li
                 className="wow fadeInDown"
                 data-wow-duration="0.8s"
                 data-wow-delay="0.4s"
               >
                 <span>
-                  <a href="#href">coolzyte@gmail.com</a>
+                  &copy; {new Date().getFullYear()} Crafted by Muhammed Tijani.
+                  <br />
+                  All rights reserved. Built with{" "}
+                  <a
+                    className="text-blue-400"
+                    href="https://reactjs.org/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    React
+                  </a>
                 </span>
-                <span>+234 8076319032</span>
               </li>
               <li
                 className="wow fadeInDown"

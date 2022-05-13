@@ -31,8 +31,9 @@ const tempLinks = data.map((link) => {
         to={`${link.url}`}
         spy={true}
         smooth={true}
-        offset={50}
-        duration={500}
+        offset={-80}
+        exact="true"
+        duration={1000}
       >
         <span className="first">{link.text}</span>
         <span className="second">{link.text}</span>
