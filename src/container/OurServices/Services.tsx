@@ -1,9 +1,9 @@
-import { ServicesWrapper } from "./ServicesStyles";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
+import { ServicesWrapper } from './ServicesStyles';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 
-import { Autoplay } from "swiper";
-import { serviceData } from "../../utils/serviceData";
+import { Autoplay } from 'swiper';
+import { serviceData } from '../../utils/serviceData';
 
 const Services = () => {
   return (

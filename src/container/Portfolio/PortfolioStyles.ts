@@ -1,7 +1,7 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const PortfolioWrapper = styled.div`
-  .portoflio {
+  .portfolio {
     width: 100%;
     height: auto;
     clear: both;
@@ -59,11 +59,6 @@ export const PortfolioWrapper = styled.div`
     opacity: 1;
     left: 10px;
     position: relative;
-
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -ms-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
 
     @media (max-width: 1040px) {
@@ -79,7 +74,7 @@ export const PortfolioWrapper = styled.div`
   .portfolio_filter ul li button {
     text-decoration: none;
     color: #000;
-    font-family: "Poppins";
+    font-family: 'Poppins';
     font-weight: 600;
     position: relative;
     overflow: hidden;
@@ -93,11 +88,6 @@ export const PortfolioWrapper = styled.div`
   .portfolio_filter ul li button .first {
     position: absolute;
     transform: translateY(100%);
-
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
   /* .portfolio_filter ul li button .second {
@@ -143,22 +133,18 @@ export const PortfolioWrapper = styled.div`
   }
   .portfolio_filter .wrapper .trigger:before {
     position: absolute;
-    content: "";
+    content: '';
     width: 15px;
     height: 3px;
     background-color: #000;
     left: 0px;
     top: -7px;
 
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
   .portfolio_filter .wrapper .trigger:after {
     position: absolute;
-    content: "";
+    content: '';
     width: 15px;
     height: 3px;
     background-color: #000;

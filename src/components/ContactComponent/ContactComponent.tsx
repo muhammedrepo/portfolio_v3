@@ -1,5 +1,5 @@
-import { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
+import { useRef, useState } from 'react';
+import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
 
 const Result = () => {
   return (
@@ -7,35 +7,37 @@ const Result = () => {
   );
 };
 
-function ContactComponent() {
-  const [result, showResult] = useState(false);
-  const form = useRef();
+function ContactComponent(): JSX.Element {
+  const [result, showResult] = useState<boolean>(false);
+  const form = useRef<HTMLFormElement>(null);
 
-  const sendEmail = (e) => {
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     emailjs
       .sendForm(
-        "service_avs0jkc",
-        "template_9z61ko5",
-        form.current,
-        "Kfjj5oTlX2byZ9Vnl"
+        'service_avs0jkc',
+        'template_9z61ko5',
+        form.current!,
+        'Kfjj5oTlX2byZ9Vnl'
       )
       .then(
-        (result) => {
-          console.log(result.text);
+        (response: EmailJSResponseStatus) => {
+          console.log(response.text);
         },
-        (error) => {
+        (error: EmailJSResponseStatus) => {
           console.log(error.text);
         }
       );
-    e.target.reset();
+    e.currentTarget.reset();
     showResult(true);
   };
+
   // hide result
   setTimeout(() => {
     showResult(false);
   }, 5000);
+
   return (
     <form
       ref={form}
@@ -61,7 +63,7 @@ function ContactComponent() {
         <textarea name="message" placeholder="Message" required></textarea>
       </div>
       <div className="coolzyte_tm_button">
-        <button>
+        <button type="submit">
           <span>Send Message</span>
         </button>
       </div>

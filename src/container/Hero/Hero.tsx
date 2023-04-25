@@ -1,12 +1,16 @@
-import { HeroWrapper } from "./HeroStyles";
-import images from "../../constants/images";
+import CSS from 'csstype';
+import React, { FC } from 'react';
 
-import CSS from "csstype";
+import { HeroWrapper } from './HeroStyles';
+import images from '../../constants/images';
 
-const Hero = () => {
-  const bgStyle: CSS.Properties = {
-    backgroundImage: `url(${images.slide2})`,
+type HeroProps = {};
+
+const Hero: FC<HeroProps> = (): JSX.Element => {
+  const backgroundImageStyle: CSS.Properties = {
+    backgroundImage: `url('${images.slide2}')`,
   };
+
   return (
     <HeroWrapper>
       <div
@@ -19,9 +23,8 @@ const Hero = () => {
             <div className="inner w-full h-full relative overflow-hidden">
               <div
                 className="image absolute -top-5 -bottom-5 -left-5 -right-5 bg-no-repeat bg-cover bg-center z-10"
-                style={bgStyle}
+                style={backgroundImageStyle}
               ></div>
-
               <div className="overlay_image absolute top-0 bottom-0 w-full z-0"></div>
               <div className="myOverlay"></div>
             </div>
@@ -39,8 +42,8 @@ const Hero = () => {
                 <h3 className="stroke text-black text-8xl font-extrabold m-0 p-0 ">
                   Hi, I'm
                 </h3>
-                <h3 className=" text-8xl font-extrabold uppercase m-0 p-0">
-                  Muhammed
+                <h3 className="text-8xl font-extrabold uppercase m-0 p-0">
+                  Muhats
                 </h3>
                 <span className="font-[Poppins] font-bold inline-block pt-5 italic">
                   Creative Web &amp; App Developer

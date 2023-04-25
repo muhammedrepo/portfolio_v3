@@ -1,9 +1,15 @@
-import { useState } from "react";
-import { AiFillEye, AiFillGithub } from "react-icons/ai";
-import { motion } from "framer-motion";
+import { useState } from 'react';
+import { AiFillEye, AiFillGithub } from 'react-icons/ai';
+import { AnimationControls, motion } from 'framer-motion';
+import { WorkItem } from '../../utils/workData';
 
-const PortfolioItem = ({ workData }) => {
-  const [animateCard, setAnimateCard] = useState([{ y: 0, opacity: 1 }]);
+interface PortfolioItemProps {
+  workItem: WorkItem[];
+}
+
+const PortfolioItem = ({ workItem }: PortfolioItemProps) => {
+  const [animateCard, setAnimateCard] = useState<AnimationControls>();
+
   return (
     <motion.div
       animate={animateCard}
@@ -11,11 +17,8 @@ const PortfolioItem = ({ workData }) => {
       className="portfolio_inner"
     >
       <ul>
-        {workData.map((menuItem) => {
-          const { id, title, image, visit, codeLink, description, tags } =
-            menuItem;
-
-          return (
+        {workItem.map(
+          ({ id, title, image, visit, codeLink, description, tags }) => (
             <li data-aos="flip-left" className="portfolio-item" key={id}>
               <div className="list_inner">
                 <div className="image app_flex">
@@ -26,10 +29,10 @@ const PortfolioItem = ({ workData }) => {
                     whileHover={{ opacity: [0, 1] }}
                     transition={{
                       duration: 0.25,
-                      ease: "easeInOut",
+                      ease: 'easeInOut',
                       staggerChildren: 0.5,
                     }}
-                    onMouseLeave={() => setAnimateCard(false)}
+                    onMouseLeave={() => setAnimateCard}
                     className="work-hover app_flex"
                   >
                     <a href={visit} target="_blank" rel="noreferrer">
@@ -59,15 +62,14 @@ const PortfolioItem = ({ workData }) => {
                   <p className="p-text" style={{ marginTop: 10 }}>
                     {description}
                   </p>
-
                   <div className="work-tag app_flex">
                     <p className="p-text">{tags}</p>
                   </div>
                 </div>
               </div>
             </li>
-          );
-        })}
+          )
+        )}
       </ul>
     </motion.div>
   );

@@ -1,8 +1,8 @@
-import { useState } from "react";
+import { useState } from 'react';
 
-import Logo from "../Logo/Logo";
-import PageLinks from "../../constants/links";
-import { TopBar, MobileMenu } from "./NavbarStyles";
+import Logo from '../Logo/Logo';
+import PageLinks from '../../constants/links';
+import { TopBar, MobileMenu } from './NavbarStyles';
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -20,7 +20,7 @@ const Navbar = () => {
     }
   };
 
-  window.addEventListener("scroll", animateTopbar);
+  window.addEventListener('scroll', animateTopbar);
 
   return (
     <>
@@ -28,8 +28,8 @@ const Navbar = () => {
         <div
           className={
             topbarScroll
-              ? "sm:hidden lg:flex animate fixed left-0 right-0 z-30 py-5 px-0 transition-all top-0"
-              : "sm:hidden lg:flex fixed left-0 right-0 top-0 z-30 py-5 px-0 transition-all"
+              ? 'sm:hidden lg:flex animate fixed left-0 right-0 z-30 py-5 px-0 transition-all top-0'
+              : 'sm:hidden lg:flex fixed left-0 right-0 top-0 z-30 py-5 px-0 transition-all'
           }
         >
           <div className="container">
@@ -56,8 +56,8 @@ const Navbar = () => {
                   <div
                     className={
                       toggleMenu
-                        ? "hamburger hamburger--collapse-r is-active"
-                        : "hamburger hamburger--collapse-r"
+                        ? 'hamburger hamburger--collapse-r is-active'
+                        : 'hamburger hamburger--collapse-r'
                     }
                     onClick={toggleMenuSwitch}
                   >
@@ -73,8 +73,8 @@ const Navbar = () => {
             <div className="dropdown transition-all delay-200 ease-linear">
               <div className="container transition-all delay-500 ease-linear">
                 <div className="dropdown_inner transition-all delay-500 ease-linear">
-                  <ul className={toggleMenu ? "show-links" : "links"}>
-                    {["home", "about", "projects", "contact"].map((item) => (
+                  <ul className={toggleMenu ? 'show-links' : 'links'}>
+                    {['home', 'about', 'projects', 'contact'].map((item) => (
                       <li key={`link-${item}`} onClick={toggleMenuSwitch}>
                         <a href={`#${item}`}>{item}</a>
                       </li>

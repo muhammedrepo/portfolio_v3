@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 import {
   Hero,
   About,
@@ -6,23 +6,23 @@ import {
   Portfolio,
   Testimonials,
   Contact,
-} from "./container";
+} from './container';
 
-import { Navbar } from "./components";
-import { AppWrap } from "./AppStyles";
-import Footer from "./components/Footer/Footer";
-import AboutModal from "./components/Modal/AboutModal";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import { Navbar } from './components';
+import { AppWrap } from './AppStyles';
+import Footer from './components/Footer/Footer';
+import AboutModal from './components/Modal/AboutModal';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function App(): JSX.Element {
   const [loading, setLoading] = useState(true);
   const [openModal, setOpenModal] = useState(false);
 
-  const spinner = document.getElementById("spinner");
+  const spinner = document.getElementById('spinner');
   if (spinner) {
     setTimeout(() => {
-      spinner.style.display = "none";
+      spinner.style.display = 'none';
       setLoading(false);
     }, 2000);
   }

@@ -1,14 +1,18 @@
-import { aboutModalData } from "../../utils/aboutModalData";
-import "./AboutModalStyles";
-import { ModalAbout } from "./AboutModalStyles";
-import { ThumbUpIcon, XCircleIcon } from "@heroicons/react/solid";
+import { aboutModalData } from '../../utils/aboutModalData';
+import './AboutModalStyles';
+import { ModalAbout } from './AboutModalStyles';
+import { ThumbUpIcon, XCircleIcon } from '@heroicons/react/solid';
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 
-import { Autoplay } from "swiper";
+import { Autoplay } from 'swiper';
 
-const AboutModal = ({ closeModal }: { closeModal: any }) => {
+interface AboutModalProps {
+  closeModal: (value: boolean) => void;
+}
+
+const AboutModal: React.FC<AboutModalProps> = ({ closeModal }) => {
   return (
     <ModalAbout>
       <div
@@ -16,11 +20,11 @@ const AboutModal = ({ closeModal }: { closeModal: any }) => {
         data-aos-duration="500"
         data-aos-delay="500"
         className="modalbox_about"
-        onClick={() => closeModal()}
+        onClick={() => closeModal(false)}
       >
         <div className="box_inner">
           <div className="close">
-            <button onClick={() => closeModal()}>
+            <button onClick={() => closeModal(false)}>
               <XCircleIcon className="h-10 w-10" />
             </button>
           </div>
@@ -35,7 +39,7 @@ const AboutModal = ({ closeModal }: { closeModal: any }) => {
                 <div className="progress">
                   <div className="progress_inner">
                     <span>
-                      <span className="label">HTML &amp; CSS</span>{" "}
+                      <span className="label">HTML &amp; CSS</span>{' '}
                       <span className="number">
                         <ThumbUpIcon />
                       </span>
@@ -50,7 +54,7 @@ const AboutModal = ({ closeModal }: { closeModal: any }) => {
                     <span>
                       <span className="label">
                         Bootstrap &amp; Tailwindcss &amp; MaterialUI
-                      </span>{" "}
+                      </span>{' '}
                       <span className="number">
                         <ThumbUpIcon />
                       </span>
@@ -63,7 +67,7 @@ const AboutModal = ({ closeModal }: { closeModal: any }) => {
                   </div>
                   <div className="progress_inner">
                     <span>
-                      <span className="label">Sass &amp; Styled-Component</span>{" "}
+                      <span className="label">Sass &amp; Styled-Component</span>{' '}
                       <span className="number">
                         <ThumbUpIcon />
                       </span>
@@ -77,9 +81,9 @@ const AboutModal = ({ closeModal }: { closeModal: any }) => {
                   <div className="progress_inner">
                     <span>
                       <span className="label">
-                        {" "}
+                        {' '}
                         Javascript &amp; Typescript
-                      </span>{" "}
+                      </span>{' '}
                       <span className="number">
                         <ThumbUpIcon />
                       </span>
@@ -101,7 +105,7 @@ const AboutModal = ({ closeModal }: { closeModal: any }) => {
                 <div className="progress">
                   <div className="progress_inner">
                     <span>
-                      <span className="label">Reactjs</span>{" "}
+                      <span className="label">Reactjs</span>{' '}
                       <span className="number">
                         <ThumbUpIcon />
                       </span>
@@ -114,7 +118,7 @@ const AboutModal = ({ closeModal }: { closeModal: any }) => {
                   </div>
                   <div className="progress_inner">
                     <span>
-                      <span className="label">Nextjs</span>{" "}
+                      <span className="label">Nextjs</span>{' '}
                       <span className="number">
                         <ThumbUpIcon />
                       </span>
@@ -127,7 +131,7 @@ const AboutModal = ({ closeModal }: { closeModal: any }) => {
                   </div>
                   <div className="progress_inner">
                     <span>
-                      <span className="label">Gatsby</span>{" "}
+                      <span className="label">Gatsby</span>{' '}
                       <span className="number">
                         <ThumbUpIcon />
                       </span>
@@ -140,7 +144,7 @@ const AboutModal = ({ closeModal }: { closeModal: any }) => {
                   </div>
                   <div className="progress_inner">
                     <span>
-                      <span className="label">RESTful Services and APIs</span>{" "}
+                      <span className="label">RESTful Services and APIs</span>{' '}
                       <span className="number">
                         <ThumbUpIcon />
                       </span>

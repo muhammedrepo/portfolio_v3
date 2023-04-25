@@ -1,8 +1,13 @@
-import { AboutWrapper } from "./AboutStyles";
-import images from "../../constants/images";
-import { SectionTitle } from "../../components";
+import { FC } from 'react';
+import { AboutWrapper } from './AboutStyles';
+import images from '../../constants/images';
+import { SectionTitle } from '../../components';
 
-const About = ({ handleClick }: { handleClick: any }) => {
+interface AboutProps {
+  handleClick: () => void;
+}
+
+const About: FC<AboutProps> = ({ handleClick }) => {
   return (
     <AboutWrapper>
       <div
@@ -20,7 +25,7 @@ const About = ({ handleClick }: { handleClick: any }) => {
             </div>
             <div data-aos="fade-left" className="right w-[60%] pl-20">
               <div className="name w-full float-left border-b pb-8 mb-8">
-                <SectionTitle name="Muhammed" title="About" />
+                <SectionTitle name="Muhat" title="About" />
 
                 <span className="font-[Poppins] font-semibold inline-block pt-[10px] italic">
                   Creative Web &amp; App Developer
@@ -28,13 +33,13 @@ const About = ({ handleClick }: { handleClick: any }) => {
               </div>
               <div className="text w-full float-left mb-6 italic">
                 <p>
-                  My name is Muhammed and I enjoy creating things that live on
-                  the internet. I work as a web developer, and I am really
+                  My name is Muhat and I enjoy creating things that live on the
+                  internet. I work as a web developer, and I am really
                   enthusiastic and dedicated to my job.
                 </p>
                 <p>
-                  Since I started working as a freelance designer almost 7 years
-                  ago, I've done remote work for agencies, consulted for
+                  Since I started working as a freelance designer almost 16
+                  years ago, I've done remote work for agencies, consulted for
                   startups, and worked with talented people to make digital
                   products for both business and consumer use. I'm always
                   working to get better at design, one problem at a time.

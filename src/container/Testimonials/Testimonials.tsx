@@ -1,10 +1,11 @@
-import { TestimonialsWrapper } from "./TestimonialsStyles";
-import { SectionTitle } from "../../components";
-import { useState } from "react";
-import { testiData } from "../../utils/testimonialData";
+import { TestimonialsWrapper } from './TestimonialsStyles';
+import { SectionTitle } from '../../components';
+import { useState } from 'react';
+
+import { TestimonialData, testimonialData } from '../../utils/testimonialData';
 
 const Testimonials = () => {
-  const [isHovering, setIsHovering] = useState(0);
+  const [isHovering, setIsHovering] = useState<number>(0);
 
   return (
     <TestimonialsWrapper>
@@ -16,10 +17,10 @@ const Testimonials = () => {
             <div className="left w-1/2 pr-[50px]">
               <div className="quote_list w-full h-auto float-left">
                 <ul className="m-0 list-none relative h-full flex items-center">
-                  {testiData.map((item, id) => (
+                  {testimonialData.map((item: TestimonialData) => (
                     <li
                       key={item.id}
-                      className={` ${isHovering === id ? "active" : ""}`}
+                      className={` ${isHovering === item.id ? 'active' : ''}`}
                     >
                       <img className="svg" src={item.quoteImg} alt="" />
                       <p className="text">{item.desc}</p>
@@ -50,18 +51,21 @@ const Testimonials = () => {
             <div className="right">
               <div className="image_list">
                 <ul className="masonry">
-                  {testiData.map((item, id) => (
+                  {testimonialData.map((item: TestimonialData) => (
                     <li
                       className="active relative"
-                      onMouseEnter={() => setIsHovering(id)}
+                      onMouseEnter={() => setIsHovering(item.id)}
                       onMouseLeave={() => setIsHovering(0)}
+                      key={item.id}
                     >
                       <div className="image">
                         <div className="main">
                           <img src={item.authorImage} alt="" />
                         </div>
                         <div
-                          className={`${isHovering === id ? "" : "overlay"}`}
+                          className={`${
+                            isHovering === item.id ? '' : 'overlay'
+                          }`}
                         ></div>
                       </div>
                     </li>
@@ -77,5 +81,3 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
-
-// {activeThree ? "box3 active" : "box3"}
